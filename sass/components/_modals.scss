@@ -1,0 +1,16 @@
+.modal{
+  .modal-dialog{
+    .modal-content{
+      box-shadow: none;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.modal-backdrop{
+  background-color: white;
+  &.in{
+    opacity: 0.95;
+  }
+}

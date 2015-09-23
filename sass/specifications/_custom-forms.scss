@@ -1,0 +1,28 @@
+.custom-form{
+	.form-control{
+		border: 2px solid #897c46;
+		border-radius: 0;
+		background: transparent;
+		outline: none !important;
+		color: #897c46;
+		box-shadow: none;
+
+
+	}
+}
+
+::-webkit-input-placeholder {
+   color: #897c46;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #897c46;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #897c46;
+}
+
+:-ms-input-placeholder {
+   color: #897c46;
+}

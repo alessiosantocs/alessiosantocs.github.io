@@ -1,0 +1,27 @@
+.incredible-fact{
+
+  padding-bottom: 50px;
+
+  .fact-title{
+    @include typo_brand_strong;
+
+    font-size: 68px;
+    line-height: 1.2;
+
+    @media (min-width: 768px){
+      font-size: 94px;
+      line-height: 1.2;
+    }
+
+
+
+  }
+  .fact-subtitle{
+    font-size: 24px;
+
+    @media (min-width: 768px){
+      font-size: 30px;
+    }
+
+  }
+}

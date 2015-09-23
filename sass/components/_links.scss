@@ -1,0 +1,199 @@
+// SET YOUR STYLES HERE
+$link_styles:	"primary" $action_primary,
+				"warning" darken($action_warning, 10%),
+				"danger"  $action_danger,
+				"info"    darken($action_info, 15%),
+				"white"   white,
+				"default" $base_color,
+				"success" darken($action_success, 10%);
+
+// Sizes
+$link_sizes:	"xs" 12px,
+				"sm" 13px,
+				// Standard 14px
+				"lg" 18px,
+				"xl" 22px;
+
+/*Primary button*/
+.link{
+	display: inline-block;
+
+	color: inherit;
+	font-size: inherit;
+	padding: 0px;
+	font-weight: normal;
+	text-decoration: underline;
+
+	&.link-inline{ display: inline; }
+
+	&:hover{
+		color: inherit;
+		text-decoration: none;
+	}
+
+	// STYLES FROM $link_styles on top
+	@each $style in $link_styles{
+		$loop_link_name: nth($style, 1);
+		$loop_link_color: nth($style, 2);
+
+		// COLORS
+		&.link-#{$loop_link_name}{
+			color: $loop_link_color;
+			text-decoration: underline;
+
+			&:hover, &.hover{
+				// color: white;
+				text-decoration: none;
+
+				background: lighten($loop_link_color, 50%);
+			}
+
+			&:active, &.active{
+				// color: darken($loop_link_color, 5%);
+			}
+
+		}
+
+	}
+
+	&.link-material{
+		overflow: hidden;
+		position: relative;
+
+		&::before{
+			content: "";
+			display: block;
+			background: rgba(0, 0, 0, 0.1);
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			left: 45%; top: 45%;
+			border-radius: 50%;
+			transform: scale(0);
+			z-index: 0;
+		}
+
+		&:active, &.active{
+			&::before{
+				transition: transform .5s ease;
+				transform: scale(30);
+			}
+		}
+	}
+
+	&:not(.link-inline){
+		@extend .link-material;
+	}
+
+	// Pokerface
+	&.link-pokerface{
+		color: $base_color;
+	}
+
+
+	&.disabled, &:disabled{
+		opacity: 0.5;
+		text-decoration: line-through !important;
+		cursor: default;
+	}
+
+	// Sizes from $link_sizes
+	@each $style in $link_sizes{
+		$loop_link_measure: nth($style, 1);
+		$loop_link_size: nth($style, 2);
+
+		// COLORS
+		&.link-#{$loop_link_measure}{
+			font-size: $loop_link_size;
+		}
+
+	}
+
+	&.link-square{
+		display: inline-block;
+		width: 40px;
+		text-align: center;
+	}
+
+	&.link-social{
+		color: $base_color;
+
+		&:hover{
+			color: lighten($base_color, 5%);
+		}
+	}
+}
+
+
+button{
+	&.link{
+		display: inline;
+		background: none;
+		border: none;
+		outline: none;
+
+		&:focus{
+			outline: none;
+		}
+	}
+}
+
+
+.pressable-material{
+	overflow: hidden;
+	position: relative;
+
+	&::before{
+		content: "";
+		display: block;
+		background: rgba(0, 0, 0, 0.07);
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		left: 45%; top: 45%;
+		border-radius: 50%;
+		transform: scale(0);
+		z-index: 0;
+	}
+
+	&:active, &.active{
+		&::before{
+			transition: transform .5s ease;
+			transform: scale(50);
+		}
+	}
+}
+
+.pressable{
+	cursor: pointer;
+
+	padding: 0px 10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-top: 5px;
+	margin-top: -5px;
+
+	@extend .pressable-material;
+	@extend .unselectable;
+
+	@each $style in $link_styles{
+		$loop_pressable_name: nth($style, 1);
+		$loop_pressable_color: nth($style, 2);
+
+		// COLORS
+		&.pressable-#{$loop_pressable_name}{
+
+			&:hover, &.hover{
+				background: lighten($loop_pressable_color, 50%);
+			}
+
+		}
+
+	}
+
+	@extend .pressable-primary;
+
+	.link{
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,72 @@
+
+// SET YOUR STYLES HERE
+$bullet_styles: "primary" $section_primary, 
+				"default" $base_color,
+				"success" $section_success;
+
+// Bullet default style
+.bullet{
+
+	display: inline-block;
+	width: 26px; height: 26px;
+	background: transparent;
+	border-radius: 50%;
+	border: 3px solid $base_color;
+
+	@include cB(transition, border-width .1s ease);
+
+	// STYLES FROM $bullet_styles on top
+	@each $style in $bullet_styles{
+		$loop_bullet_name: nth($style, 1);
+		$loop_bullet_color: nth($style, 2);
+
+		// COLORS
+		&.bullet-#{$loop_bullet_name} {
+			background: transparent;
+			border-color: $loop_bullet_color;
+
+			&:active, &.active{
+				border-color: darken($loop_bullet_color, 10%);
+			}
+		}
+
+	}
+
+	// default hover and active actions
+	&:hover{
+		border-width: 8px;
+	}
+
+	&:active, &.active{
+		border-width: 13px;
+	}
+
+
+	// Rules for a small bullet
+	&.bullet-sm{
+		width: 20px; height: 20px;
+		border-width: 3px;
+
+
+		&:hover{
+			border-width: 5px;
+		}
+
+		&:active, &.active{
+			border-width: 10px;
+		}
+
+	}
+
+}
+
+// bullet-group
+.bullet-group{
+	// Horizontal bullets or vertical bullets?
+	&.bullet-vertical{
+		.bullet{
+			margin-bottom: 5px;
+		}
+	}
+
+}

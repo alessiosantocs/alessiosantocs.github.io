@@ -1,0 +1,27 @@
+$headings_max: 40px;
+$headings_subtraction: 6px;
+
+@each $heading in 1,2,3,4,5,6{
+	h#{$heading}, .h#{$heading}{
+		$size: $headings_max - ($headings_subtraction * ($heading - 1));
+		@include typo_brand_weak;
+
+		font-weight: light;
+
+		letter-spacing: 0px;
+
+		font-size: $size * 0.9;
+
+		@media (min-width: 768px){
+			font-size: $size;
+		}
+
+		line-height: 1.5em;
+
+		// text-transform: uppercase;
+	}
+}
+
+.section-header{
+	@extend .margin-bottom-2;
+}

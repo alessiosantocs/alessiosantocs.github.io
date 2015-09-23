@@ -1,0 +1,146 @@
+/*Body*/
+body{
+	@include typo_brand_weak;
+	color: $base_color;
+
+	@if($navbar_fixed_top){
+		&:not(.home){
+			padding-top: 80px;
+		}
+	}
+}
+
+.container{
+	max-width: $container_max_width;
+}
+
+.project{
+	label{
+		font-weight: 500;
+
+		margin-bottom: 0;
+		font-size: 18px;
+	}
+}
+
+// Content sections style
+@import "components/sections";
+
+hr{
+	border-color: #FAFAFA;
+	margin-bottom: 30px;
+
+	@media (min-width: 768px){
+		margin-bottom: 50px;
+	}
+
+
+	&.half-rule {
+		width: 100px;
+		margin: 40px auto;
+	}
+
+	&.hr-inverse{
+		border-color: rgba(255,255,255, 0.5);
+	}
+
+	&.mr-cinnamon:after{
+		content: "";
+		display: block;
+
+		width: 40px; height: 38px;
+
+		background: url(http://www.google.com/inbox/assets/images/common/logo-nav.png);
+		background-size: contain;
+
+		margin: auto;
+		margin-top: -20px;
+	}
+}
+
+
+.invisible-marker{
+	overflow: hidden; opacity: 0; height: 0; position: relative;
+
+	top: -40px;
+
+	&.marker-no-line{
+		top: -80px;
+	}
+
+	@media (min-width: 768px){
+		top: -2px;
+
+		&.disable-desktop{
+			top: 0;
+		}
+
+		&.marker-no-line{
+			top: -80px;
+		}
+	}
+
+}
+
+
+.hide-before-preload,.show-after-preload{
+	opacity: 0;
+	@include cB(transition, opacity .5s ease);
+
+	&.enter{
+		opacity: 1;
+	}
+}
+
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+
+
+.window-sized{
+	-webkit-transition: min-height .4s ease, height .4s ease;
+	-moz-transition: min-height .4s ease, height .4s ease;
+	-ms-transition: min-height .4s ease, height .4s ease;
+	-o-transition: min-height .4s ease, height .4s ease;
+	transition: min-height .4s ease, height .4s ease;
+}
+.vertically-aligned{
+	position: absolute;
+
+	-webkit-transition: top .4s ease;
+	-moz-transition: top .4s ease;
+	-ms-transition: top .4s ease;
+	-o-transition: top .4s ease;
+	transition: top .4s ease;
+}
+
+
+// Project page
+body.project-page{
+	// Contains markdown rendering
+	#project-content{
+		p{
+			text-align: justify;
+			font-size: 18px;
+			line-height: 1.5;
+		}
+
+		img{
+			width: 100%;
+		}
+	}
+}
+
+// Extensions for specific classes
+.project,.career-experience,.repository{
+	@extend .pressable;
+}

@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": "pazienti-it",
+      "name": "Pazienti.it",
+      "date": "Feb 2013",
+      "description": "#rails #angularjs #ux"
+    },
+    {
+      "id": "adec-it",
+      "name": "Adec.it",
+      "date": "Feb 2015",
+      "description": "#wordpress #ux"
+    }
+  ]
+}

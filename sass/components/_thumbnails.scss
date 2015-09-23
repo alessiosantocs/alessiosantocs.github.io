@@ -1,0 +1,35 @@
+.thumbnail{
+  border: 3px solid $secondary_color;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 0px;
+
+  &.thumbnail-team{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.thumbnail-title{
+  font-size: 15px;
+  color: $strong_color;
+  font-weight: bold;
+
+  @extend .margin-bottom-2;
+}
+.thumbnail-label{
+  font-size: 15px;
+  color: $strong_color;
+}
+.thumbnail-description{
+  font-size: 13px;
+  color: #AAAAAA;
+
+  @extend .margin-bottom;
+}
+
+.thumbnail-separator{
+  @extend .no-margin-top;
+  @extend .margin-bottom;
+}

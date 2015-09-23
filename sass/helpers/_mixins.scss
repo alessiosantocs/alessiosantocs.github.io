@@ -1,0 +1,37 @@
+
+// font mixins
+@mixin typo_brand_strong {
+	font-family: $font_brand_strong;
+	font-weight: 800;
+}
+@mixin typo_brand_weak {
+	font-family: $font_brand_weak;
+	font-weight: 200;
+}
+
+
+// Cross-browsers mixins
+@mixin cB($property, $value){
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}
+
+
+
+
+// Breakpoints
+
+@mixin media($breakpoint){
+	@media (min-width: $breakpoint){
+		@content;
+	}
+}
+
+@mixin media_max($breakpoint){
+	@media (max-width: $breakpoint){
+		@content;
+	}
+}

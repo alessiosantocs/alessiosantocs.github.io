@@ -1,0 +1,55 @@
+@keyframes blinky {
+  0% {
+    background: transparent;
+  }
+
+  100% {
+    background: yellow;
+  }
+}
+@-webkit-keyframes blinky {
+  0% {
+    background: transparent;
+  }
+
+  100% {
+    background: yellow;
+  }
+}
+input, p {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  height: 80px;
+  line-height: 80px;
+  width: 100%;
+  margin-top: -40px;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  color: transparent;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+p:after, p:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+p:after {
+  position: relative;
+  bottom: 8px;
+  left: 8px;
+  background: yellow;
+  animation: blinky 1s steps(2) infinite;
+  -webkit-animation: blinky 1s steps(2) infinite;
+}

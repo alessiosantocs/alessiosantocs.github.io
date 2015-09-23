@@ -1,0 +1,53 @@
+$default_px_blocks: "default" 	10px,
+					"2" 	20px,
+					"3" 	30px,
+					"4" 	40px,
+					"5" 	50px,
+					"6" 	60px,
+					"7" 	70px,
+					"8" 	80px,
+					"9" 	90px,
+					"10" 	100px;
+
+// HELPERS RULES ============================================================================
+
+	// Remove margin
+	.no-margin{
+		margin: 0 !important;
+	}
+
+	// Remove Padding
+	.no-padding{
+		padding: 0 !important;
+	}
+
+
+	@each $direction in 'top', 'left', 'right', 'bottom' {
+
+		// No padding from direction
+		.no-padding-#{$direction} { padding-#{$direction}: 0 !important }
+		// No margin from direction
+		.no-margin-#{$direction} { margin-#{$direction}: 0 !important }
+
+		// For each size defined
+		@each $size in $default_px_blocks {
+			// Build the suffix
+			$suffix: '-' + nth($size, 1);
+			$px_size: nth($size, 2);
+			// If the size is called default don't add a pre suffix
+			@if $suffix == '-default' {
+				$suffix: '';
+			}
+
+			// Build a class like .double_margin_top (margin top of 20px) | .margin_top (margin top of 10px)
+			.margin-#{$direction}#{$suffix}, .wrapper1080 .main-content .margin-#{$direction}#{$suffix} {
+				margin-#{$direction}: $px_size;
+			}
+
+			// Build a class like .double_margin_top (margin top of 20px) | .margin_top (margin top of 10px)
+			.padding-#{$direction}#{$suffix}, .wrapper1080 .main-content .padding-#{$direction}#{$suffix}{
+				padding-#{$direction}: $px_size;
+			}
+		}
+
+	}

@@ -1,0 +1,164 @@
+body{
+	overflow: hidden;
+	opacity: 0;
+	@include cB(transition, opacity .5s ease);
+
+	&.ready{
+		opacity: 1;
+	}
+}
+
+#scroll-up-indicator{
+	opacity: 1;
+
+	@include cB(animation, scroll-up-indicator-animation 1.5s ease infinite);
+	@include cB(transition, opacity .3s ease);
+
+	position: relative;
+	left: -40px;
+	top: -10px;
+	&.fadeout{
+		display: block;
+		opacity: 0;
+	}
+}
+
+#CIPlantIllustration{
+	position: absolute;
+	left: 0; right: 0;
+}
+
+.ci-place-plant{
+	position: relative;
+	left: -100px;
+
+	section{
+		overflow: hidden;
+
+		.img-responsive{
+			position: absolute; 
+			bottom: 0;
+
+		}
+
+		&:first-child .img-responsive{
+			top: 0;
+			bottom: auto;
+		}
+
+	}
+}
+
+
+#LCTextScene{
+
+	background-image: url(../images/resources/gradient-03.png), url(../images/resources/gradient-04.png);
+	background-repeat: repeat-x;
+	background-position: bottom, top;
+
+	.ci-slide-four{
+		margin-top: 50px;
+	}
+}
+
+
+#LCIntroTextScene{
+
+	background-image: url(../images/resources/gradient-02.png);
+	background-repeat: repeat-x;
+	background-position: top;
+
+
+	.ci-text-container{
+		margin-top: 100px;
+	}
+}
+
+#LCIntroTextScene{
+	position: relative;
+	overflow: hidden;
+	#CIPrimaryPlantIllustrationContainer{
+		position: absolute;
+		overflow: hidden;
+		width: 65%;
+		top: 0;
+		right: 0;
+		z-index: 0;
+	}
+}
+
+
+
+#cinnamon-seed{
+	-webkit-transition: opacity .6s ease, -webkit-transform .6s ease;
+	-moz-transition: opacity .6s ease, -moz-transform .6s ease;
+	-ms-transition: opacity .6s ease, -ms-transform .6s ease;
+	-o-transition: opacity .6s ease, -o-transform .6s ease;
+	transition: opacity .6s ease, transform .6s ease;
+
+	opacity: 1;
+	@include cB(transform, translateY(0px));
+
+	&.fadeout{
+		opacity: 0;
+		@include cB(transform, translateY(100px));
+	}
+}
+
+
+
+
+#cinnaphone{
+	width: 320px; height: 665px;
+
+	cursor: pointer;
+
+	// position: absolute;
+	// bottom: 279px;
+
+	-webkit-transition: -webkit-transform .5s ease;
+	-moz-transition: -moz-transform .5s ease;
+	-ms-transition: -ms-transform .5s ease;
+	-o-transition: -o-transform .5s ease;
+	transition: transform .5s ease;
+	@include cB(transform, translateY(-25%));
+
+
+	&.bounceout{
+		@include cB(transform, translateY(0%));
+	}
+
+	.ci-presentation-phone{
+		background: url(../images/resources/sprite-cinnaphone.png);
+		background-size: 100%;
+		position: absolute;
+		left: 0; bottom: 0; top: 0; right: 0;
+		opacity: 0;
+
+		@include cB(transition, opacity .5s ease);
+
+		&.first-phone{
+			background-position: 0px 0px;
+		}
+		&.second-phone{
+			background-position: 0px -716px;
+		}
+		&.third-phone{
+			background-position: 0px -1442px;
+		}
+
+		&.active{
+			opacity: 1;
+		}
+
+	}
+
+	.ci-presentation-back{
+		background: url(../images/resources/sprite-cinnaphone.png);
+		background-size: 100%;
+		position: absolute;
+		left: 0; bottom: 0; top: 0; right: 0;
+		background-position: 0px -2177px;
+
+	}
+}

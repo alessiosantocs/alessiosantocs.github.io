@@ -1,0 +1,52 @@
+.panel{
+  position: relative;
+
+  .panel-body{
+    -webkit-transition: -webkit-filter .5s ease;
+    -webkit-filter: blur(0px);
+  }
+
+  .panel-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    text-align: center;
+
+    z-index: 0;
+
+    background: rgba(255,255,255,.7);
+
+    padding: 20px 0px;
+
+    -webkit-transition: opacity .5s ease;
+    opacity: 0;
+
+    overflow: hidden;
+
+    .panel-message{
+      -webkit-transition: -webkit-transform .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      -webkit-transform: translateY(50px);
+
+      font-size: 21px;
+      color: $success_color;
+    }
+  }
+
+  &.display-overlay{
+    .panel-body{
+      -webkit-filter: blur(2px);
+    }
+
+    .panel-overlay{
+      opacity: 1;
+
+      .panel-message{
+        -webkit-transform: translateY(0px);
+      }
+    }
+  }
+
+}

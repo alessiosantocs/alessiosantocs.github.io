@@ -1,0 +1,86 @@
+// H tags style
+@import "components/headings";
+// Links style
+@import "components/links";
+// Knowledge blocks style
+@import "components/knowledge_blocks";
+
+
+.typo-brand-strong{
+	@include typo_brand_strong;
+}
+
+.typo-brand-weak{
+	@include typo_brand_weak;
+}
+
+
+// .text-styles
+$text_color_styles: "primary" $action_primary,
+					"warning" $action_warning,
+					"danger"  $action_danger,
+					"info"    $action_info,
+					"white"   white,
+					"success" $action_success;
+
+@each $style in $text_color_styles{
+	$loop_text_name: nth($style, 1);
+	$loop_text_color: nth($style, 2);
+
+	.text-#{$loop_text_name}{
+		color: $loop_text_color;
+	}
+
+}
+
+// Paragraphs
+p{
+	@include typo_brand_weak;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.3;
+	margin-bottom: 30px;
+
+/* 	@media (min-width: 768px){
+	font-size: 15px;
+}
+ */
+	&.general{
+		font-size: 26px;
+
+		@media (min-width: 768px){
+			font-size: 28px;
+		}
+	}
+
+	&.captain{
+		font-size: 24px;
+
+		@media (min-width: 768px){
+			font-size: 26px;
+		}
+	}
+
+	&.sergent{
+		font-size: 21px;
+		color: #aaaaaa;
+		@media (min-width: 768px){
+			font-size: 24px;
+		}
+	}
+
+
+
+	// Special paragraphs
+	&.thumbnail-description{
+		@extend .thumbnail-description !optional;
+	}
+
+	&.light{
+		color: $gray;
+	}
+}
+
+body{
+	letter-spacing: 0;
+}

@@ -1,0 +1,137 @@
+
+// Navbar variables
+
+$navbar_default_font_size: 12px;
+$navbar_default_letter_spacing: 0px;
+
+.navbar{
+	&.navbar-cinnamon{
+
+		background: $navbar_background_color;
+		border: none;
+		border-radius: 0;
+		min-height: 80px;
+		margin-bottom: 0;
+		letter-spacing: $navbar_default_letter_spacing;
+
+		.navbar-brand{
+			height: 80px;
+			padding: 20px 15px;
+
+			// Toggle hack
+			@media (max-width: 465px){
+				width: 100%;
+				// text-align: center;
+
+				// &:after{
+				// 	content: "menu";
+				// 	position: absolute;
+				// 	top: 0;
+				// 	left: 0;
+				// 	right: 0;
+				// 	padding: 30px;
+				// 	font-size: 30px;
+				// 	background: $primary_color;
+				// 	color: $secondary_color;
+				// 	font-weight: 200;
+				// 	letter-spacing: 4px;
+				// 	opacity: 0;
+				// 	-webkit-animation: fade-in-then-out 4s 4s;
+				// }
+			}
+
+		}
+
+		.navbar-nav>li{
+			text-align: center;
+
+			@media (min-width: 768px){
+				text-align: left;
+			}
+
+			>button{
+				margin-left: 15px;
+				margin-right: 15px;
+				font-size: $navbar_default_font_size;
+				font-weight: bold;
+				text-transform: uppercase;
+				padding-top: 11px;
+				padding-bottom: 10px;
+			}
+			>a{
+				@include typo_brand_weak;
+				font-size: $navbar_default_font_size;
+				text-align: center; // Default because we need it on mobile
+
+				padding: 18px 15px;
+
+				@media (min-width: 768px){
+					padding: 30px 15px;
+				}
+
+				color: $navbar_text_color;
+				font-weight: bold;
+				text-transform: uppercase;
+
+
+				@media (min-width: 768px){
+
+					&:hover{
+						&:after{
+							display: block;
+						}
+					}
+
+					&:after{
+						content: " ";
+						display: none;
+						position: absolute;
+						background: $secondary_color;
+						left: 15px; right: 15px;
+						height: 2px;
+					}
+				}
+			}
+
+			>.navbar-btn{
+
+				@media (min-width: 768px){
+						width: auto;
+				}
+			}
+
+
+		}
+
+		.navbar-collapse, .navbar-form{
+			border: none;
+		}
+
+		.navbar-btn{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+
+		}
+
+		.navbar-toggle {
+
+			// Toggle hack
+			@media (max-width: 465px){
+				opacity: 0;
+				position: absolute;
+				width: 100%;
+
+				z-index: 2;
+
+				margin: 0;
+				padding: 30px;
+			}
+
+			.icon-bar{
+				background-color: #e5c4a9; // move this from here
+			}
+		}
+	}
+}

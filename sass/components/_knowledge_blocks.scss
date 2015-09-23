@@ -1,0 +1,13 @@
+.knowledge-title{
+  font-size: 18px;
+  color: $headings_color;
+  font-weight: bold;
+}
+
+.knowledge-description{
+  font-size: 15px;
+}
+
+.knowledge-block{
+  @extend .margin-bottom-5;
+}

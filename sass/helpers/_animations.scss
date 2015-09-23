@@ -1,0 +1,33 @@
+// ANIMATIONS
+
+@-webkit-keyframes fade-in-then-out{
+	0%{
+		opacity: 0;
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+.ci-animate{
+	// Move a bit towards the sky
+	&.reveal-up{
+		@include cB(transition, -webkit-transform .5s ease);
+		&:hover{
+			-webkit-transform: translateY(-50px);
+		}
+	}
+
+	// Scale a bit
+	&.scale-up{
+		@include cB(transition, -webkit-transform 1s ease);
+		-webkit-transform-origin: top right;
+		&:hover{
+			-webkit-transform: scale(1.01);
+		}
+	}
+
+}

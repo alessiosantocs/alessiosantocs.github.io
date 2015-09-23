@@ -1,0 +1,78 @@
+
+// Website configuration
+$navbar_fixed_top: true;
+
+
+// Color palette
+$red: 							#f47472;
+
+$light_green: 			#EFF2E6;
+$green: 						#4DA14B;
+$dark_green: 				#A9B38C;
+$darker_green: 			#788358;
+
+$purple: 						#F9B0DB;
+$fucsia: 						#f680c6;
+$dark_purple: 			#aa4782;
+$grey_purple: 			#ad8b9f;
+
+$light_water_blue: 	#52b5c3;
+$dark_water_blue: 	#C9F3F9;
+$light_blue: 				#c9f3f9;
+$blue: 				      #2979ff;
+
+$yellow: 						#f8e79a;
+$dark_gold: 				#ada271;
+$light_gold: 				#c6b978;
+
+$gray:              #AAAAAA;
+$black: 						#555555;
+$green_gold: 				#897C46;
+
+$light_brown: #E5C4A9;
+
+// Color denomination
+$strong_color: $black;
+$weak_color: $light_blue;
+
+$base_color: $black; // should be used for text
+$primary_color: $green;
+$secondary_color: $weak_color;
+$success_color: $dark_green;
+
+
+// Navbar
+$navbar_background_color: white;
+$navbar_text_color: $strong_color;
+
+// Fonts
+$font_brand_strong: 'Roboto';
+$font_brand_weak: 'Roboto';
+
+// Typography
+$headings_color: $base_color;
+
+// Actionable colors
+$action_primary: 	$primary_color;
+$action_success: 	$success_color;
+$action_warning: 	$secondary_color;
+$action_danger: 	$strong_color;
+$action_default: 	$base_color;
+$action_info: 		$dark_water_blue;
+
+// Sections colors
+$section_primary: $secondary_color;
+$section_success: $success_color;
+$section_info: $secondary_color;
+$section_danger: $strong_color;
+$section_dream: $secondary_color;
+
+
+// Layout
+$container_max_width: 460px;
+
+
+// Break points
+$breakpoint_sm: 768px;
+$breakpoint_md: 992px;
+$breakpoint_lg: 1200px;

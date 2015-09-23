@@ -1,0 +1,191 @@
+// Colored sections
+section{
+	padding: 50px 0;
+	position: relative;
+
+	&.section-primary{
+		background: $section_primary;
+		color: $base_color;
+
+		hr{border-color: $secondary_color;}
+
+		h1{
+			color: white;
+		}
+	}
+
+	&.section-info{
+		background: $section_info;
+		color: $base_color;
+		hr{border-color: $primary_color;}
+	}
+
+	&.section-success{
+		background: $section_success;
+		color: $base_color;
+	}
+
+	&.section-danger{
+		background: $section_danger;
+		color: $base_color;
+	}
+
+	&.section-dream{
+		background: $section_dream;
+		color: $strong_color;
+	}
+
+	$section_max_size: 10;
+	$section_atom: 30px;
+	// Section sizes
+
+	&.section-size-0{
+		padding: 10px 0px;
+	}
+	@for $size from 1 through $section_max_size{
+		&.section-size-#{$size}{
+			padding: $size / 3 * $section_atom 0px;
+
+			@media (min-width: 768px){
+				padding: $size * $section_atom 0px;
+			}
+
+		}
+	}
+
+
+
+	// Sections with background =====================================
+
+	// Every extra image without the class below will be ignored
+	.img-background{
+		display: none;
+	}
+
+	// For sections with background images
+	&.section-with-background-img{
+		overflow: hidden;
+
+		// Set the chosen image as background
+		.img-background{
+			display: none;
+			position: absolute;
+
+			top: -30%; // Just a fast fix
+
+			left: 0;
+			right: 0;
+			margin: auto;
+			display: block;
+
+			&.adapt-height{
+				height: 100%;
+				top: 0;
+				left: auto;
+				right: 0;
+
+				img{
+					height: 100%;
+				}
+			}
+
+			&.center-on-mobile{
+				left: -95%;
+
+				@media (min-width: 768px){
+					left: auto;
+				}
+			}
+
+			// Left image gradient fallback
+			&:before{
+				content: " ";
+				display: block;
+				background: black;
+				width: 150px;
+				height: 100%;
+
+				position: absolute;
+
+				background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 6%, rgba(0,0,0,0) 74%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(6%,rgba(0,0,0,1)), color-stop(74%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 6%,rgba(0,0,0,0) 74%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 6%,rgba(0,0,0,0) 74%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 6%,rgba(0,0,0,0) 74%,rgba(0,0,0,0) 100%); /* IE10+ */
+				background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 6%,rgba(0,0,0,0) 74%,rgba(0,0,0,0) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+
+			}
+		}
+
+		// Put the main content on top
+		.container{
+			position: relative;
+			z-index: 2;
+		}
+
+		// Add a smocky layer on top of the image
+		&.smocky{
+			// And add a little background to text
+			text-shadow: 1px 1px 1px #000;
+
+			h1{
+				text-shadow: 2px 2px 2px #000;
+			}
+
+			&:after{
+				content: " ";
+
+				background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+				background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+		}
+
+	}
+
+	// / Sections with background =====================================
+
+
+	// Sections section titles =====================================
+
+	.section-title{
+		margin-top: 0;
+		margin-bottom: 20px;
+		font-size: 24px;
+
+		@media (min-width: 768px){
+			margin-bottom: 30px;
+		}
+
+	}
+
+
+	&.overflow-hidden{
+		overflow: hidden;
+	}
+
+
+	.vertically-aligned{
+		// @media(min-width: 768px){
+			width: 100%;
+		// }
+	}
+
+	.vertically-aligned{
+		// @media(min-width: 768px){
+			width: 100%;
+		// }
+	}
+}
