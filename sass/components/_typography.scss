@@ -69,7 +69,9 @@ p{
 		}
 	}
 
-
+	&.lead{
+		@include typo_brand_weak;
+	}
 
 	// Special paragraphs
 	&.thumbnail-description{

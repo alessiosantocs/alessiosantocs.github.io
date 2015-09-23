@@ -134,4 +134,12 @@ $navbar_default_letter_spacing: 0px;
 			}
 		}
 	}
+
+	.logo{
+		font-size: 28px;
+		line-height: 35px;
+		letter-spacing: 1px;
+
+		color: $primary_color;
+	}
 }

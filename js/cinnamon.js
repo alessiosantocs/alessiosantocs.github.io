@@ -131,10 +131,11 @@ $(document).ready(function(){
     var button = $(this).find("button[type=submit]");
     button.attr("disabled", true);
 
-    this.reset();
+    var form = this;
     button.html("Sending");
 
     window.setTimeout(function(){
+      form.reset();
       button.html("Sent");
 
       window.setTimeout(function(){

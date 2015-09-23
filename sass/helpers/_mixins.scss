@@ -2,11 +2,11 @@
 // font mixins
 @mixin typo_brand_strong {
 	font-family: $font_brand_strong;
-	font-weight: 800;
+	font-weight: 400;
 }
 @mixin typo_brand_weak {
 	font-family: $font_brand_weak;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 

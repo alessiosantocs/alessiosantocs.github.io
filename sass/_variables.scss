@@ -1,58 +1,55 @@
 
-// Website configuration
+// - Website configuration
+// This adds a nice padding to the top of the page
+// if the navbar is positioned as fixed.
 $navbar_fixed_top: true;
 
 
-// Color palette
-$red: 							#f47472;
+// - Color palette
+// This is a developer's reference.
+// You don't use this palette directly.
+// You use this in variables such as $strong_color
+// and $primary_color to define what the website will look like.
 
-$light_green: 			#EFF2E6;
+$test_red: rgb(217, 66, 51);
+
 $green: 						#4DA14B;
 $dark_green: 				#A9B38C;
-$darker_green: 			#788358;
 
-$purple: 						#F9B0DB;
-$fucsia: 						#f680c6;
-$dark_purple: 			#aa4782;
-$grey_purple: 			#ad8b9f;
-
-$light_water_blue: 	#52b5c3;
 $dark_water_blue: 	#C9F3F9;
 $light_blue: 				#c9f3f9;
-$blue: 				      #2979ff;
-
-$yellow: 						#f8e79a;
-$dark_gold: 				#ada271;
-$light_gold: 				#c6b978;
 
 $gray:              #AAAAAA;
 $black: 						#555555;
-$green_gold: 				#897C46;
 
-$light_brown: #E5C4A9;
+// - Color denomination
+// Here you start making sense of your palette
+$strong_color: $black; // What color should be predominant in your website?
+$weak_color: $light_blue; // What color is also used as a weaker color?
 
-// Color denomination
-$strong_color: $black;
-$weak_color: $light_blue;
-
-$base_color: $black; // should be used for text
-$primary_color: $green;
-$secondary_color: $weak_color;
-$success_color: $dark_green;
+$base_color: $black; // Should be used for text
+$primary_color: $test_red; // Should be used for primary actions (cta buttons, primary links etc...)
+$secondary_color: $weak_color; // Secondary actions will use this color.
+$success_color: $dark_green; // Success actions will use this color.
 
 
-// Navbar
+// - Navbar
 $navbar_background_color: white;
 $navbar_text_color: $strong_color;
 
-// Fonts
+// - Fonts
+// Define the font you will use on your website.
+// The _strong one is usually used for headings
+// The _weak one is usually used for texts and paragraphs.
 $font_brand_strong: 'Roboto';
 $font_brand_weak: 'Roboto';
 
-// Typography
+// - Typography
+// Specific rules for typography
 $headings_color: $base_color;
 
-// Actionable colors
+// - Actionable colors
+// Usually buttons and links will use this denomination
 $action_primary: 	$primary_color;
 $action_success: 	$success_color;
 $action_warning: 	$secondary_color;
@@ -60,7 +57,8 @@ $action_danger: 	$strong_color;
 $action_default: 	$base_color;
 $action_info: 		$dark_water_blue;
 
-// Sections colors
+// - Sections colors
+// .section(s) have background and text colors. The guidelines are defined here
 $section_primary: $secondary_color;
 $section_success: $success_color;
 $section_info: $secondary_color;
@@ -68,11 +66,12 @@ $section_danger: $strong_color;
 $section_dream: $secondary_color;
 
 
-// Layout
+// - Layout
 $container_max_width: 460px;
 
 
-// Break points
+// - Break points
+// They are used to influence the behaviour of some components
 $breakpoint_sm: 768px;
 $breakpoint_md: 992px;
 $breakpoint_lg: 1200px;

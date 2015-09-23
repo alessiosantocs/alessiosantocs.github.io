@@ -4,7 +4,7 @@ $headings_subtraction: 6px;
 @each $heading in 1,2,3,4,5,6{
 	h#{$heading}, .h#{$heading}{
 		$size: $headings_max - ($headings_subtraction * ($heading - 1));
-		@include typo_brand_weak;
+		@include typo_brand_strong;
 
 		font-weight: light;
 

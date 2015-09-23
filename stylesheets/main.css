@@ -1,5 +1,5 @@
 @import url(lib/bootstrap.min.css);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
 .navbar.navbar-cinnamon {
   background: white;
   border: none;
@@ -28,7 +28,7 @@
       padding-bottom: 10px; }
     .navbar.navbar-cinnamon .navbar-nav > li > a {
       font-family: "Roboto";
-      font-weight: 200;
+      font-weight: 300;
       font-size: 12px;
       text-align: center;
       padding: 18px 15px;
@@ -69,11 +69,16 @@
       padding: 30px; } }
   .navbar.navbar-cinnamon .navbar-toggle .icon-bar {
     background-color: #e5c4a9; }
+.navbar .logo {
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  color: #d94233; }
 
 /*Body*/
 body {
   font-family: "Roboto";
-  font-weight: 200;
+  font-weight: 300;
   color: #555555; }
   body:not(.home) {
     padding-top: 80px; }
@@ -100,7 +105,7 @@ section {
     background: #c9f3f9;
     color: #555555; }
     section.section-info hr {
-      border-color: #4da14b; }
+      border-color: #d94233; }
   section.section-success {
     background: #a9b38c;
     color: #555555; }
@@ -348,7 +353,7 @@ body.project-page #project-content img {
   height: 40px;
   font-size: 15px;
   font-family: "Roboto";
-  font-weight: 200;
+  font-weight: 300;
   color: #555555;
   padding: 10px 0px 5px 0px;
   border: none;
@@ -358,14 +363,14 @@ body.project-page #project-content img {
   border-color: #aaaaaa;
   box-shadow: none; }
   .form-control:focus {
-    border-color: #4da14b;
+    border-color: #d94233;
     -webkit-box-shadow: none;
     box-shadow: none; }
 
 /*Primary button*/
 .btn {
   font-family: "Roboto";
-  font-weight: 800;
+  font-weight: 400;
   outline: none !important;
   border-radius: 2px;
   font-size: 15px;
@@ -373,27 +378,27 @@ body.project-page #project-content img {
   padding-top: 5px;
   padding-bottom: 5px; }
   .btn.btn-primary {
-    background: #4da14b;
+    background: #d94233;
     color: white;
-    border-color: #4da14b; }
+    border-color: #d94233; }
     .btn.btn-primary:hover {
-      background: #58b055;
-      border-color: #58b055; }
+      background: #dd5648;
+      border-color: #dd5648; }
     .btn.btn-primary:active, .btn.btn-primary.active {
-      background: #459043;
-      border-color: #459043;
+      background: #cc3526;
+      border-color: #cc3526;
       box-shadow: none; }
     .btn.btn-primary.btn-outline {
-      color: #4da14b;
-      border: 2px solid #4da14b;
+      color: #d94233;
+      border: 2px solid #d94233;
       background: transparent; }
       .btn.btn-primary.btn-outline:hover, .btn.btn-primary.btn-outline.hover {
         color: white;
-        background: #4da14b; }
+        background: #d94233; }
       .btn.btn-primary.btn-outline:active, .btn.btn-primary.btn-outline.active {
-        background: #459043; }
+        background: #cc3526; }
     .btn.btn-primary.btn-line {
-      color: #4da14b;
+      color: #d94233;
       border: none;
       background: transparent;
       text-decoration: underline;
@@ -621,7 +626,7 @@ body.project-page #project-content img {
 
 h1, .h1 {
   font-family: "Roboto";
-  font-weight: 200;
+  font-weight: 400;
   font-weight: light;
   letter-spacing: 0px;
   font-size: 36px;
@@ -632,7 +637,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-family: "Roboto";
-  font-weight: 200;
+  font-weight: 400;
   font-weight: light;
   letter-spacing: 0px;
   font-size: 30.6px;
@@ -643,7 +648,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-family: "Roboto";
-  font-weight: 200;
+  font-weight: 400;
   font-weight: light;
   letter-spacing: 0px;
   font-size: 25.2px;
@@ -654,7 +659,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-family: "Roboto";
-  font-weight: 200;
+  font-weight: 400;
   font-weight: light;
   letter-spacing: 0px;
   font-size: 19.8px;
@@ -665,7 +670,7 @@ h4, .h4 {
 
 h5, .h5 {
   font-family: "Roboto";
-  font-weight: 200;
+  font-weight: 400;
   font-weight: light;
   letter-spacing: 0px;
   font-size: 14.4px;
@@ -676,7 +681,7 @@ h5, .h5 {
 
 h6, .h6 {
   font-family: "Roboto";
-  font-weight: 200;
+  font-weight: 400;
   font-weight: light;
   letter-spacing: 0px;
   font-size: 9px;
@@ -699,11 +704,11 @@ h6, .h6 {
     color: inherit;
     text-decoration: none; }
   .link.link-primary {
-    color: #4da14b;
+    color: #d94233;
     text-decoration: underline; }
     .link.link-primary:hover, .link.link-primary.hover {
       text-decoration: none;
-      background: #f2f9f2; }
+      background: white; }
   .link.link-warning {
     color: #9be9f4;
     text-decoration: underline; }
@@ -816,7 +821,7 @@ button.link {
   padding-top: 5px;
   margin-top: -5px; }
   .pressable.pressable-primary:hover, .pressable:hover, .project:hover, .career-experience:hover, .repository:hover, .pressable.pressable-primary.hover, .pressable.hover, .hover.project, .hover.career-experience, .hover.repository {
-    background: #f2f9f2; }
+    background: white; }
   .pressable.pressable-warning:hover, .pressable-warning.project:hover, .pressable-warning.career-experience:hover, .pressable-warning.repository:hover, .pressable.pressable-warning.hover, .pressable-warning.hover.project, .pressable-warning.hover.career-experience, .pressable-warning.hover.repository {
     background: white; }
   .pressable.pressable-danger:hover, .pressable-danger.project:hover, .pressable-danger.career-experience:hover, .pressable-danger.repository:hover, .pressable.pressable-danger.hover, .pressable-danger.hover.project, .pressable-danger.hover.career-experience, .pressable-danger.hover.repository {
@@ -842,14 +847,14 @@ button.link {
 
 .typo-brand-strong {
   font-family: "Roboto";
-  font-weight: 800; }
+  font-weight: 400; }
 
 .typo-brand-weak {
   font-family: "Roboto";
-  font-weight: 200; }
+  font-weight: 300; }
 
 .text-primary {
-  color: #4da14b; }
+  color: #d94233; }
 
 .text-warning {
   color: #c9f3f9; }
@@ -868,7 +873,7 @@ button.link {
 
 p {
   font-family: "Roboto";
-  font-weight: 200;
+  font-weight: 300;
   font-size: 15px;
   font-weight: 300;
   line-height: 1.3;
@@ -893,6 +898,9 @@ p {
     @media (min-width: 768px) {
       p.sergent {
         font-size: 24px; } }
+  p.lead {
+    font-family: "Roboto";
+    font-weight: 300; }
   p.light {
     color: #aaaaaa; }
 
@@ -946,7 +954,7 @@ body {
   padding-bottom: 50px; }
   .incredible-fact .fact-title {
     font-family: "Roboto";
-    font-weight: 800;
+    font-weight: 400;
     font-size: 68px;
     line-height: 1.2; }
     @media (min-width: 768px) {
