@@ -12,6 +12,10 @@ window.updatePressables = function(){
 		$(this).addClass('active');
 	});
 
+	$('.btn,.link,.project,.career-experience,.repository').mouseout(function(){
+		$(this).removeClass('active');
+	});
+
 	$('.btn,.link,.project,.career-experience,.repository').mouseup(function(){
 		var _this = this;
 		window.setTimeout(function(){

@@ -16,12 +16,6 @@
 		  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed navbar-btn ci-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
 		      <a class="navbar-brand" href="index.html">
 						<div class="logo">
 							<span class="typo-brand-weak">about</span><span class="typo-brand-strong">alessio</span>
@@ -32,10 +26,10 @@
 		  </div><!-- /.container-fluid -->
 		</nav><!-- /.navbar -->
 
-		<div id="contact" class="modal fade" data-backdrop="static" data-keyboard="false">
+		<div id="contact" class="modal fade" data-backdrop="static" data-keyboard="true">
 
 		  <div class="modal-dialog container">
-				<button class="close link pull-right" data-dismiss="modal" aria-label="Close"><img src="images/cross.svg" alt="Close"></button>
+				<a href="#" onmouseup="$('#contact').modal('hide');" class="close link pull-right"><img src="images/cross.svg" alt="Close"></a>
 		    <div class="modal-content">
 
 					<form action="https://docs.google.com/forms/d/17V8e0CzDfc47DA4bfIzC-rTuYKHP083Gw4cuT9IJGWo/formResponse" class="form margin-top-6" method="POST" id="contact-form">
@@ -87,7 +81,7 @@
 
 						<div class="row">
 							<div class="col-sm-4 col-xs-6">
-								<a href="#contact" data-toggle="modal" data-target="#contact" class="btn btn-primary btn-outline btn-responsive btn-material">
+								<a href="#" onmouseup="$('#contact').modal('show');" class="btn btn-primary btn-outline btn-responsive btn-material">
 									Let's talk
 								</a>
 							</div>
