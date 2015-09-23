@@ -607,10 +607,22 @@ body.project-page #project-content img {
       left: 45%;
       top: 45%;
       border-radius: 50%;
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
       transform: scale(0);
       z-index: 0; }
     .btn.btn-material:active::before, .btn.btn-material.active::before {
-      transition: transform .5s ease;
+      -webkit-transition: transform 0.5s ease;
+      -moz-transition: transform 0.5s ease;
+      -ms-transition: transform 0.5s ease;
+      -o-transition: transform 0.5s ease;
+      transition: transform 0.5s ease;
+      -webkit-transform: scale(30);
+      -moz-transform: scale(30);
+      -ms-transform: scale(30);
+      -o-transform: scale(30);
       transform: scale(30); }
   .btn.btn-responsive {
     width: 100%; }
@@ -758,10 +770,22 @@ h6, .h6 {
       left: 45%;
       top: 45%;
       border-radius: 50%;
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
       transform: scale(0);
       z-index: 0; }
     .link.link-material:active::before, .link:not(.link-inline):active::before, .link.link-material.active::before, .link.active:not(.link-inline)::before {
-      transition: transform .5s ease;
+      -webkit-transition: transform 0.5s ease;
+      -moz-transition: transform 0.5s ease;
+      -ms-transition: transform 0.5s ease;
+      -o-transition: transform 0.5s ease;
+      transition: transform 0.5s ease;
+      -webkit-transform: scale(30);
+      -moz-transform: scale(30);
+      -ms-transform: scale(30);
+      -o-transform: scale(30);
       transform: scale(30); }
   .link.link-pokerface {
     color: #555555; }
@@ -807,10 +831,22 @@ button.link {
     left: 45%;
     top: 45%;
     border-radius: 50%;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
     transform: scale(0);
     z-index: 0; }
   .pressable-material:active::before, .pressable:active::before, .project:active::before, .career-experience:active::before, .repository:active::before, .pressable-material.active::before, .active.pressable::before, .active.project::before, .active.career-experience::before, .active.repository::before {
-    transition: transform .5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+    -webkit-transform: scale(50);
+    -moz-transform: scale(50);
+    -ms-transform: scale(50);
+    -o-transform: scale(50);
     transform: scale(50); }
 
 .pressable, .project, .career-experience, .repository {

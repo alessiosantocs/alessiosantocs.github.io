@@ -101,14 +101,16 @@ $button_padding: 5px;
 			position: absolute;
 			left: 45%; top: 45%;
 			border-radius: 50%;
-			transform: scale(0);
+
+			@include cB(transform, scale(0));
+
 			z-index: 0;
 		}
 
 		&:active, &.active{
 			&::before{
-				transition: transform .5s ease;
-				transform: scale(30);
+				@include cB(transition, transform .5s ease);
+				@include cB(transform, scale(30));
 			}
 		}
 	}
