@@ -19,7 +19,6 @@ $(document).ready(function () {
 				element.css("min-height", original_height);
 		});
 
-		$('.vertically-aligned').verticalAlign();
 	});
 
 	$(window).resize();

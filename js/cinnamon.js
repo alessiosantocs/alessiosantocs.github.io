@@ -98,6 +98,7 @@ $(document).ready(function(){
       var id = match_array[1];
       api.projects(id, function(response){
         var project = response.project;
+        $("title").html("Project: " + project.name + " - Alessio Santo - aboutalessio.com");
         $(".project-name").html(project.name);
         $(".project-date").html(project.date);
         $(".project-link").attr("href", project.live_url);
