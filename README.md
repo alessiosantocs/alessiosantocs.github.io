@@ -21,3 +21,5 @@ Make a quick change:
 
   // into
   $primary_color: $test_red;
+
+You will turn your tasty green website into a red one in a heartbeat.

@@ -73,7 +73,7 @@
   font-size: 28px;
   line-height: 35px;
   letter-spacing: 1px;
-  color: #d94233; }
+  color: #4da14b; }
 
 /*Body*/
 body {
@@ -105,7 +105,7 @@ section {
     background: #c9f3f9;
     color: #555555; }
     section.section-info hr {
-      border-color: #d94233; }
+      border-color: #4da14b; }
   section.section-success {
     background: #a9b38c;
     color: #555555; }
@@ -363,7 +363,7 @@ body.project-page #project-content img {
   border-color: #aaaaaa;
   box-shadow: none; }
   .form-control:focus {
-    border-color: #d94233;
+    border-color: #4da14b;
     -webkit-box-shadow: none;
     box-shadow: none; }
 
@@ -378,27 +378,27 @@ body.project-page #project-content img {
   padding-top: 5px;
   padding-bottom: 5px; }
   .btn.btn-primary {
-    background: #d94233;
+    background: #4da14b;
     color: white;
-    border-color: #d94233; }
+    border-color: #4da14b; }
     .btn.btn-primary:hover {
-      background: #dd5648;
-      border-color: #dd5648; }
+      background: #58b055;
+      border-color: #58b055; }
     .btn.btn-primary:active, .btn.btn-primary.active {
-      background: #cc3526;
-      border-color: #cc3526;
+      background: #459043;
+      border-color: #459043;
       box-shadow: none; }
     .btn.btn-primary.btn-outline {
-      color: #d94233;
-      border: 2px solid #d94233;
+      color: #4da14b;
+      border: 2px solid #4da14b;
       background: transparent; }
       .btn.btn-primary.btn-outline:hover, .btn.btn-primary.btn-outline.hover {
         color: white;
-        background: #d94233; }
+        background: #4da14b; }
       .btn.btn-primary.btn-outline:active, .btn.btn-primary.btn-outline.active {
-        background: #cc3526; }
+        background: #459043; }
     .btn.btn-primary.btn-line {
-      color: #d94233;
+      color: #4da14b;
       border: none;
       background: transparent;
       text-decoration: underline;
@@ -704,11 +704,11 @@ h6, .h6 {
     color: inherit;
     text-decoration: none; }
   .link.link-primary {
-    color: #d94233;
+    color: #4da14b;
     text-decoration: underline; }
     .link.link-primary:hover, .link.link-primary.hover {
       text-decoration: none;
-      background: white; }
+      background: #f2f9f2; }
   .link.link-warning {
     color: #9be9f4;
     text-decoration: underline; }
@@ -821,7 +821,7 @@ button.link {
   padding-top: 5px;
   margin-top: -5px; }
   .pressable.pressable-primary:hover, .pressable:hover, .project:hover, .career-experience:hover, .repository:hover, .pressable.pressable-primary.hover, .pressable.hover, .hover.project, .hover.career-experience, .hover.repository {
-    background: white; }
+    background: #f2f9f2; }
   .pressable.pressable-warning:hover, .pressable-warning.project:hover, .pressable-warning.career-experience:hover, .pressable-warning.repository:hover, .pressable.pressable-warning.hover, .pressable-warning.hover.project, .pressable-warning.hover.career-experience, .pressable-warning.hover.repository {
     background: white; }
   .pressable.pressable-danger:hover, .pressable-danger.project:hover, .pressable-danger.career-experience:hover, .pressable-danger.repository:hover, .pressable.pressable-danger.hover, .pressable-danger.hover.project, .pressable-danger.hover.career-experience, .pressable-danger.hover.repository {
@@ -854,7 +854,7 @@ button.link {
   font-weight: 300; }
 
 .text-primary {
-  color: #d94233; }
+  color: #4da14b; }
 
 .text-warning {
   color: #c9f3f9; }
