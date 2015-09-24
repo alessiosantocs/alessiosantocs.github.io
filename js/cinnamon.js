@@ -19,12 +19,12 @@ $(document).ready(function(){
     var prototype = $(".projects .project");
     var container = $(".projects");
 
-    // reset
-    container.find(".project").remove();
-
     // fetch data and print stuff
     api.projects("index", function(response){
       var projects = response.projects;
+
+      // reset
+      container.find(".project").remove();
 
       var projects_html = $.map(projects, function(project){
         var html = prototype.clone();
@@ -55,12 +55,14 @@ $(document).ready(function(){
     var prototype = $(".repositories .repository");
     var container = $(".repositories");
 
-    // reset
-    container.find(".repository").remove();
+
 
     // fetch data and print stuff
     api.repositories(function(response){
       var repositories = response;
+
+      // reset
+      container.find(".repository").remove();
 
       var repositories_html = $.map(repositories, function(repository){
         var html = prototype.clone();
