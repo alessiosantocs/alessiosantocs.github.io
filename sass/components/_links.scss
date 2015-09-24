@@ -153,6 +153,8 @@ button{
 	@include materialButtonEffectAdv(transparent, rgba(0,0,0, 0.1), .7s);
 	@extend .unselectable;
 
+	@include clearfix;
+
 	@each $style in $link_styles{
 		$loop_pressable_name: nth($style, 1);
 		$loop_pressable_color: nth($style, 2);

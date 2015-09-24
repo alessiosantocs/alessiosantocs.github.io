@@ -946,6 +946,11 @@ button.link {
     -o-transition: background-size 0.7s ease;
     transition: background-size 0.7s ease;
     background-size: 15000%; }
+  .pressable:before, .project:before, .career-experience:before, .repository:before, .pressable:after, .project:after, .career-experience:after, .repository:after {
+    display: table;
+    content: " "; }
+  .pressable:after, .project:after, .career-experience:after, .repository:after {
+    clear: both; }
   .pressable.pressable-primary:hover, .pressable:hover, .project:hover, .career-experience:hover, .repository:hover, .pressable.pressable-primary.hover, .pressable.hover, .hover.project, .hover.career-experience, .hover.repository {
     background-color: #f2f9f2; }
   .pressable.pressable-warning:hover, .pressable-warning.project:hover, .pressable-warning.career-experience:hover, .pressable-warning.repository:hover, .pressable.pressable-warning.hover, .pressable-warning.hover.project, .pressable-warning.hover.career-experience, .pressable-warning.hover.repository {
