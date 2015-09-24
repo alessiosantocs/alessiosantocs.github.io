@@ -1,10 +1,17 @@
 {
   "projects": [
+    
     {
-      "id": "pazienti-it",
-      "name": "Pazienti.it",
-      "date": "Feb 2013",
+      "id": "startup-layout",
+      "name": "Startup Layout",
+      "date": "Sep 2015",
       "description": "#rails #angularjs #ux"
+    },
+    {
+      "id": "adec-it",
+      "name": "Adec.it",
+      "date": "May 2015",
+      "description": "#wordpress #ux"
     },
     {
       "id": "cinnamon-last",
@@ -19,22 +26,17 @@
       "description": "#landingpage #ios #svganimation"
     },
     {
-      "id": "adec-it",
-      "name": "Adec.it",
-      "date": "May 2015",
-      "description": "#wordpress #ux"
+      "id": "pazienti-it",
+      "name": "Pazienti.it",
+      "date": "Feb 2014",
+      "description": "#rails #angularjs #ux"
     },
     {
       "id": "captain",
       "name": "Captain - Web app & dev tool",
-      "date": "Feb 2013",
+      "date": "Feb 2014",
       "description": "#rails #ux #backend"
-    },
-    {
-      "id": "startup-layout",
-      "name": "Startup Layout",
-      "date": "Sep 2015",
-      "description": "#rails #angularjs #ux"
     }
+    
   ]
 }
