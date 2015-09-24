@@ -394,7 +394,7 @@ body.project-page #project-content img {
     background-color: #4da14b;
     color: white;
     border-color: #4da14b; }
-    .btn.btn-primary:active {
+    .btn.btn-primary:active, .btn.btn-primary.active {
       -webkit-transition: background-size 0.5s ease;
       -moz-transition: background-size 0.5s ease;
       -ms-transition: background-size 0.5s ease;
@@ -445,7 +445,7 @@ body.project-page #project-content img {
     background-color: #c9f3f9;
     color: #555555;
     border-color: #c9f3f9; }
-    .btn.btn-warning:active {
+    .btn.btn-warning:active, .btn.btn-warning.active {
       -webkit-transition: background-size 0.5s ease;
       -moz-transition: background-size 0.5s ease;
       -ms-transition: background-size 0.5s ease;
@@ -496,7 +496,7 @@ body.project-page #project-content img {
     background-color: #555555;
     color: #555555;
     border-color: #555555; }
-    .btn.btn-danger:active {
+    .btn.btn-danger:active, .btn.btn-danger.active {
       -webkit-transition: background-size 0.5s ease;
       -moz-transition: background-size 0.5s ease;
       -ms-transition: background-size 0.5s ease;
@@ -547,7 +547,7 @@ body.project-page #project-content img {
     background-color: #c9f3f9;
     color: #555555;
     border-color: #c9f3f9; }
-    .btn.btn-info:active {
+    .btn.btn-info:active, .btn.btn-info.active {
       -webkit-transition: background-size 0.5s ease;
       -moz-transition: background-size 0.5s ease;
       -ms-transition: background-size 0.5s ease;
@@ -598,7 +598,7 @@ body.project-page #project-content img {
     background-color: white;
     color: #555555;
     border-color: white; }
-    .btn.btn-white:active {
+    .btn.btn-white:active, .btn.btn-white.active {
       -webkit-transition: background-size 0.5s ease;
       -moz-transition: background-size 0.5s ease;
       -ms-transition: background-size 0.5s ease;
@@ -649,7 +649,7 @@ body.project-page #project-content img {
     background-color: #c9f3f9;
     color: #555555;
     border-color: #c9f3f9; }
-    .btn.btn-default:active {
+    .btn.btn-default:active, .btn.btn-default.active {
       -webkit-transition: background-size 0.5s ease;
       -moz-transition: background-size 0.5s ease;
       -ms-transition: background-size 0.5s ease;
@@ -700,7 +700,7 @@ body.project-page #project-content img {
     background-color: #a9b38c;
     color: #555555;
     border-color: #a9b38c; }
-    .btn.btn-success:active {
+    .btn.btn-success:active, .btn.btn-success.active {
       -webkit-transition: background-size 0.5s ease;
       -moz-transition: background-size 0.5s ease;
       -ms-transition: background-size 0.5s ease;
@@ -881,7 +881,7 @@ h6, .h6 {
     background-position: center;
     background-color: transparent;
     background-size: 0%; }
-    .link:not(.link-inline):active {
+    .link:not(.link-inline):active, .link:not(.link-inline).active {
       -webkit-transition: background-size 0.4s ease;
       -moz-transition: background-size 0.4s ease;
       -ms-transition: background-size 0.4s ease;
@@ -939,7 +939,7 @@ button.link {
   background-position: center;
   background-color: transparent;
   background-size: 0%; }
-  .pressable:active, .project:active, .career-experience:active, .repository:active {
+  .pressable:active, .project:active, .career-experience:active, .repository:active, .pressable.active, .active.project, .active.career-experience, .active.repository {
     -webkit-transition: background-size 0.7s ease;
     -moz-transition: background-size 0.7s ease;
     -ms-transition: background-size 0.7s ease;

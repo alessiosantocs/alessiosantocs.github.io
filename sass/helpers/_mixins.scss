@@ -30,7 +30,7 @@
 	background-color: $background_color;
 	background-size: 0%;
 
-	&:active{
+	&:active, &.active{
 		@include cB(transition, background-size $duration ease);
 		background-size: 15000%;
 	}

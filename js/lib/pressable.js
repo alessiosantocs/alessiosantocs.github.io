@@ -4,7 +4,7 @@ window.updatePressables = function(){
 
 		window.setTimeout(function(){
 			window.location.href = link.attr('href');
-		}, 400);
+		}, 700);
 	});
 
 	// Persisting active status
@@ -20,7 +20,7 @@ window.updatePressables = function(){
 		var _this = this;
 		window.setTimeout(function(){
 			$(_this).removeClass('active');
-		}, 400)
+		}, 700)
 	});
 };
 
