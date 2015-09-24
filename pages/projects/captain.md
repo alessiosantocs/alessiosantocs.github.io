@@ -10,3 +10,7 @@ The detail page of a release of the client's app.
 
 Everything works thanks to the 'captain-rails' gem - available on rubygems - ready to be integrated into any rails project. 
 It allows developers to instantly track their deployments via Capistrano. Such weirds technical names.... never mind :)
+
+#### Role
+
+I am the author and engineer behind Captain. I wrote it in Ruby on Rails and a little bit of javascript.
