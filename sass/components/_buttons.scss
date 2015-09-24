@@ -17,6 +17,7 @@ $button_padding: 5px;
 .btn{
 
 	@include typo_brand_strong;
+
 	outline: none !important;
 
 	border-radius: $button_border_radius;
@@ -35,17 +36,20 @@ $button_padding: 5px;
 
 		// COLORS
 		&.btn-#{$loop_button_name}{
-			background: $loop_button_color;
+			// Material effect
+			@include materialButtonEffect($loop_button_color);
+
+			background-color: $loop_button_color;
 			color: $loop_label_color;
 			border-color: $loop_button_color;
 
 			&:hover{
-				background: lighten($loop_button_color, 5%);
+				background-color: lighten($loop_button_color, 5%);
 				border-color: lighten($loop_button_color, 5%);
 			}
 
 			&:active, &.active{
-				background: darken($loop_button_color, 5%);
+				background-color: darken($loop_button_color, 5%);
 				border-color: darken($loop_button_color, 5%);
 				box-shadow: none;
 				// box-shadow: inset 0px 3px 3px darken($loop_button_color, 10%);
@@ -54,16 +58,16 @@ $button_padding: 5px;
 			&.btn-outline{
 				color: $loop_button_color;
 				border: 2px solid $loop_button_color;
-				background: transparent;
+				background-color: transparent;
 
 				&:hover, &.hover{
 					color: $loop_label_color;
-					background: $loop_button_color;
+					background-color: $loop_button_color;
 				}
 
 				&:active, &.active{
 					// color: black;
-					background: darken($loop_button_color, 5%);
+					background-color: darken($loop_button_color, 5%);
 				}
 			}
 
@@ -88,32 +92,32 @@ $button_padding: 5px;
 
 	}
 
-	&.btn-material{
-		overflow: hidden;
-		position: relative;
-
-		&::before{
-			content: "";
-			display: block;
-			background: rgba(255, 255, 255, 0.2);
-			width: 10px;
-			height: 10px;
-			position: absolute;
-			left: 45%; top: 45%;
-			border-radius: 50%;
-
-			@include cB(transform, scale(0));
-
-			z-index: 0;
-		}
-
-		&:active, &.active{
-			&::before{
-				@include cB(transition, transform .5s ease);
-				@include cB(transform, scale(30));
-			}
-		}
-	}
+	// &.btn-material{
+	// 	overflow: hidden;
+	// 	position: relative;
+	//
+	// 	&::before{
+	// 		content: "";
+	// 		display: block;
+	// 		background: rgba(255, 255, 255, 0.2);
+	// 		width: 10px;
+	// 		height: 10px;
+	// 		position: absolute;
+	// 		left: 45%; top: 45%;
+	// 		border-radius: 50%;
+	//
+	// 		@include cB(transform, scale(0));
+	//
+	// 		z-index: 0;
+	// 	}
+	//
+	// 	&:active, &.active{
+	// 		&::before{
+	// 			@include cB(transition, transform .5s ease);
+	// 			@include cB(transform, scale(30));
+	// 		}
+	// 	}
+	// }
 
 	&.btn-responsive{
 		width: 100%;
@@ -139,3 +143,25 @@ $button_padding: 5px;
 		}
 	}
 }
+
+
+//
+// .m-button-effect{
+// 	$fill_m_1: rgba(255,255,255, 0.2) 10%;
+// 	$fill_m_2: transparent 10%;
+// 	background: -webkit-radial-gradient(circle, $fill_m_1, $fill_m_2);
+// 	background: -o-radial-gradient(circle, $fill_m_1, $fill_m_2);
+// 	background: -moz-radial-gradient(circle, $fill_m_1, $fill_m_2);
+// 	background: radial-gradient(circle, $fill_m_1, $fill_m_2);
+//
+// 	// @include cB(transition, background-size .3s ease);
+//
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// 	// background-color: $green;
+// 	background-size: 0%;
+//
+// 	&:active{
+// 		background-size: 1080%;
+// 	}
+// }

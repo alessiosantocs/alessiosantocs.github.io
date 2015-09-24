@@ -9,6 +9,33 @@
 	font-weight: 300;
 }
 
+// Material effect mixin
+
+@mixin materialButtonEffect($background_color){
+	@include materialButtonEffectAdv($background_color, rgba(255,255,255, 0.2), .5s);
+}
+
+@mixin materialButtonEffectAdv($background_color, $layer_color, $duration){
+	$fill_m_1: $layer_color 1%;
+	$fill_m_2: transparent 1%;
+	background: -webkit-radial-gradient(circle, $fill_m_1, $fill_m_2);
+	background: -o-radial-gradient(circle, $fill_m_1, $fill_m_2);
+	background: -moz-radial-gradient(circle, $fill_m_1, $fill_m_2);
+	background: radial-gradient(circle, $fill_m_1, $fill_m_2);
+
+	@include cB(transition, background-size .3s ease);
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: $background_color;
+	background-size: 0%;
+
+	&:active{
+		@include cB(transition, background-size $duration ease);
+		background-size: 15000%;
+	}
+}
+
 
 // Cross-browsers mixins
 @mixin cB($property, $value){

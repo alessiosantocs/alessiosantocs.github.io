@@ -45,7 +45,7 @@ $link_sizes:	"xs" 12px,
 				// color: white;
 				text-decoration: none;
 
-				background: lighten($loop_link_color, 50%);
+				background-color: lighten($loop_link_color, 50%);
 			}
 
 			&:active, &.active{
@@ -56,35 +56,35 @@ $link_sizes:	"xs" 12px,
 
 	}
 
-	&.link-material{
-		overflow: hidden;
-		position: relative;
-
-		&::before{
-			content: "";
-			display: block;
-			background: rgba(0, 0, 0, 0.1);
-			width: 10px;
-			height: 10px;
-			position: absolute;
-			left: 45%; top: 45%;
-			border-radius: 50%;
-
-			@include cB(transform, scale(0));
-
-			z-index: 0;
-		}
-
-		&:active, &.active{
-			&::before{
-				@include cB(transition, transform .5s ease);
-				@include cB(transform, scale(30));
-			}
-		}
-	}
+	// &.link-material{
+	// 	overflow: hidden;
+	// 	position: relative;
+	//
+	// 	&::before{
+	// 		content: "";
+	// 		display: block;
+	// 		background: rgba(0, 0, 0, 0.1);
+	// 		width: 10px;
+	// 		height: 10px;
+	// 		position: absolute;
+	// 		left: 45%; top: 45%;
+	// 		border-radius: 50%;
+	//
+	// 		@include cB(transform, scale(0));
+	//
+	// 		z-index: 0;
+	// 	}
+	//
+	// 	&:active, &.active{
+	// 		&::before{
+	// 			@include cB(transition, transform .5s ease);
+	// 			@include cB(transform, scale(30));
+	// 		}
+	// 	}
+	// }
 
 	&:not(.link-inline){
-		@extend .link-material;
+		@include materialButtonEffectAdv(transparent, rgba(0,0,0, 0.1), .4s);
 	}
 
 	// Pokerface
@@ -130,7 +130,7 @@ $link_sizes:	"xs" 12px,
 button{
 	&.link{
 		display: inline;
-		background: none;
+		background-color: none;
 		border: none;
 		outline: none;
 
@@ -141,33 +141,6 @@ button{
 }
 
 
-.pressable-material{
-	overflow: hidden;
-	position: relative;
-
-	&::before{
-		content: "";
-		display: block;
-		background: rgba(0, 0, 0, 0.07);
-		width: 10px;
-		height: 10px;
-		position: absolute;
-		left: 45%; top: 45%;
-		border-radius: 50%;
-
-		@include cB(transform, scale(0));
-
-		z-index: 0;
-	}
-
-	&:active, &.active{
-		&::before{
-			@include cB(transition, transform .5s ease);
-			@include cB(transform, scale(50));
-		}
-	}
-}
-
 .pressable{
 	cursor: pointer;
 
@@ -177,7 +150,7 @@ button{
 	padding-top: 5px;
 	margin-top: -5px;
 
-	@extend .pressable-material;
+	@include materialButtonEffectAdv(transparent, rgba(0,0,0, 0.1), .7s);
 	@extend .unselectable;
 
 	@each $style in $link_styles{
@@ -188,7 +161,7 @@ button{
 		&.pressable-#{$loop_pressable_name}{
 
 			&:hover, &.hover{
-				background: lighten($loop_pressable_color, 50%);
+				background-color: lighten($loop_pressable_color, 50%);
 			}
 
 		}
