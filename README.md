@@ -10,7 +10,7 @@ I used a boilerplate/framework I've developed a couple of months ago, based on b
 Clone the repo locally. Open the terminal, cd to the folder that has just been created and type:
 
 ```
-  sass -wc sass/:stylesheets/
+sass -wc sass/:stylesheets/
 ```
 
 This will compile sass files into one single main.css file used by this website.
