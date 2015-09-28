@@ -7,7 +7,6 @@ window.api = {
     $.get("pages/projects/" + method + ".md", callback);
   },
   repositories: function(callback){
-    // $.get("http://api.github.com/users/alessiosantocs/repos?sort=pushed", callback);
     $.ajax({
       url: "http://api.github.com/users/alessiosantocs/repos?sort=pushed",
       crossDomain: true
