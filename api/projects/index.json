@@ -2,12 +2,6 @@
   "projects": [
     
     {
-      "id": "startup-layout",
-      "name": "Startup Layout",
-      "date": "Sep 2015",
-      "description": "#rails #angularjs #ux"
-    },
-    {
       "id": "adec-it",
       "name": "Adec.it",
       "date": "May 2015",
