@@ -9,17 +9,21 @@ I used a boilerplate/framework I've developed a couple of months ago, based on b
 ### Usage
 Clone the repo locally. Open the terminal and type:
 
+```
   sass -wc sass/:stylesheets/
+```
 
 This will compile sass files into one single main.css file used by this website.
 
 To make a quick example just open 'index.html' in your browser and sass/\_variables.scss at the same time.
 Make a quick change:
 
-  // Turn
+```sass
+  // Turn this
   $primary_color: $green;
 
-  // into
+  // into this
   $primary_color: $test_red;
+```
 
 You will turn your tasty green website into a red one in a heartbeat.
