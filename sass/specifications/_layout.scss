@@ -124,6 +124,15 @@ hr{
 }
 
 
+#contenteffect{
+  transform: translateY(70px);
+
+	&.present{
+		transition: transform 2s .1s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+		transform: translateY(0px);
+	}
+}
+
 // Home effect
 #presenter{
 	position: fixed;
@@ -132,22 +141,32 @@ hr{
 	right: 0;
 	bottom: 0;
 
-	$fill_m_2: white 1%;
-	$fill_m_1: transparent 1%;
+	$fill_m_2: white 10%;
+	$fill_m_1: transparent 10%;
 	background: -webkit-radial-gradient(circle, $fill_m_1, $fill_m_2);
 	background: -o-radial-gradient(circle, $fill_m_1, $fill_m_2);
 	background: -moz-radial-gradient(circle, $fill_m_1, $fill_m_2);
 	background: radial-gradient(circle, $fill_m_1, $fill_m_2);
 
+	background-color: white;
+
 	z-index: 1080;
 
-	@include cB(transition, background-size 1.5s ease);
+	// @include cB(transition, transform 1.5s ease);
 
-	background-size: 20%;
+	background-size: 100%;
 	background-position: center;
 
+	transform: scale(1);
 	&.present{
-		background-size: 15000%;
+		-webkit-transition: -webkit-transform 1.5s ease, background-color .8s ease;
+		-moz-transition: -moz-transform 1.5s ease, background-color .8s ease;
+		-ms-transition: -ms-transform 1.5s ease, background-color .8s ease;
+		-o-transition: -o-transform 1.5s ease, background-color .8s ease;
+		transition: transform 1.5s ease, background-color .8s ease;
+
+		background-color: transparent;
+		transform: scale(10);
 	}
 }
 

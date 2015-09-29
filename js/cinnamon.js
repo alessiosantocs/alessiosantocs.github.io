@@ -159,9 +159,10 @@ $(document).ready(function(){
   // Home page effect
   window.setTimeout(function(){
     $("#presenter").addClass("present");
+    $("#contenteffect").addClass("present");
 
     window.setTimeout(function(){
       $("#presenter").remove();
     }, 1600);
-  }, 700);
+  }, 500);
 });
