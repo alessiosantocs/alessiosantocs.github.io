@@ -327,6 +327,27 @@ hr {
   -o-transition: top .4s ease;
   transition: top .4s ease; }
 
+#presenter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-radial-gradient(circle, transparent 1%, white 1%);
+  background: -o-radial-gradient(circle, transparent 1%, white 1%);
+  background: -moz-radial-gradient(circle, transparent 1%, white 1%);
+  background: radial-gradient(circle, transparent 1%, white 1%);
+  z-index: 1080;
+  -webkit-transition: background-size 1.5s ease;
+  -moz-transition: background-size 1.5s ease;
+  -ms-transition: background-size 1.5s ease;
+  -o-transition: background-size 1.5s ease;
+  transition: background-size 1.5s ease;
+  background-size: 20%;
+  background-position: center; }
+  #presenter.present {
+    background-size: 15000%; }
+
 body.project-page #project-content p {
   text-align: justify;
   font-size: 18px;

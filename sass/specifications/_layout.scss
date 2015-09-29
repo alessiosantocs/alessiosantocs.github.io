@@ -124,6 +124,33 @@ hr{
 }
 
 
+// Home effect
+#presenter{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	$fill_m_2: white 1%;
+	$fill_m_1: transparent 1%;
+	background: -webkit-radial-gradient(circle, $fill_m_1, $fill_m_2);
+	background: -o-radial-gradient(circle, $fill_m_1, $fill_m_2);
+	background: -moz-radial-gradient(circle, $fill_m_1, $fill_m_2);
+	background: radial-gradient(circle, $fill_m_1, $fill_m_2);
+
+	z-index: 1080;
+
+	@include cB(transition, background-size 1.5s ease);
+
+	background-size: 20%;
+	background-position: center;
+
+	&.present{
+		background-size: 15000%;
+	}
+}
+
 // Project page
 body.project-page{
 	// Contains markdown rendering

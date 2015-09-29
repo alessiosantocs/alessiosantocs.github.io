@@ -155,4 +155,13 @@ $(document).ready(function(){
     return false;
   });
 
+
+  // Home page effect
+  window.setTimeout(function(){
+    $("#presenter").addClass("present");
+
+    window.setTimeout(function(){
+      $("#presenter").remove();
+    }, 1600);
+  }, 700);
 });
