@@ -1,5 +1,11 @@
 
-window.api = {
+var config = {
+  displayName: "Alessio",
+  showRepositories: false,
+  knownFor: "problemsolving details javascript and great ux"
+};
+
+var api = {
   projects: function(method, callback){
     $.get("api/projects/" + method + ".json", callback);
   },
@@ -117,9 +123,18 @@ $(document).ready(function(){
     }
   }else{
     fetchProjects();
-    fetchRepositories();
+
+    if(config.showRepositories){
+      fetchRepositories();
+    }else{
+      $(".repositories").hide();
+    }
   }
 
+  // Configure page
+  $("#logotype-displayname").html(config.displayName.toLowerCase());
+  $("#proposition-displayname").html(config.displayName);
+  $("#known-for").html(config.knownFor);
 
   // Custom message form
   $("#contact-form").submit(function (event) {

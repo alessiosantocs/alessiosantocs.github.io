@@ -1,36 +1,36 @@
 {
   "projects": [
-    
+
     {
       "id": "adec-it",
       "name": "Adec.it",
       "date": "May 2015",
-      "description": "#wordpress #ux"
+      "description": "Website UX design and front-end to maximize conversions"
     },
     {
       "id": "cinnamon-last",
       "name": "Cinnamon - Glucose monitor",
       "date": "Aug 2014",
-      "description": "#landingpage #ios #responsive"
+      "description": "Marketing page front-end development"
     },
     {
       "id": "cinnamon-lifestyle",
       "name": "Cinnamon - Lifestyle tracker",
       "date": "Aug 2014",
-      "description": "#landingpage #ios #svganimation"
+      "description": "Marketing page front-end development"
     },
     {
       "id": "pazienti-it",
       "name": "Pazienti.it",
       "date": "Feb 2014",
-      "description": "#rails #angularjs #ux"
+      "description": "Startup's product UX and front-end development"
     },
     {
       "id": "captain",
       "name": "Captain - Web app & dev tool",
       "date": "Feb 2014",
-      "description": "#rails #ux #backend"
+      "description": "Dev tool front-end and back-end development"
     }
-    
+
   ]
 }
