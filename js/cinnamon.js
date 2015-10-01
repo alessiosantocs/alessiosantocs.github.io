@@ -2,7 +2,7 @@
 var config = {
   displayName: "Alessio",
   showRepositories: false,
-  knownFor: "problemsolving details javascript and great ux"
+  knownFor: "problem solving, attention to details and javascript"
 };
 
 var api = {
@@ -179,5 +179,5 @@ $(document).ready(function(){
     window.setTimeout(function(){
       $("#presenter").remove();
     }, 1600);
-  }, 500);
+  }, 800);
 });

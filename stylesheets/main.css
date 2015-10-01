@@ -328,9 +328,21 @@ hr {
   transition: top .4s ease; }
 
 #contenteffect {
+  -webkit-transform: translateY(70px);
+  -moz-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  -o-transform: translateY(70px);
   transform: translateY(70px); }
   #contenteffect.present {
+    -webkit-transition: -webkit-transform 2s 0.1s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+    -moz-transition: -moz-transform 2s 0.1s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+    -ms-transition: -ms-transform 2s 0.1s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+    -o-transition: -o-transform 2s 0.1s cubic-bezier(0.08, 1.18, 0.69, 1.01);
     transition: transform 2s 0.1s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
     transform: translateY(0px); }
 
 #presenter {
@@ -347,6 +359,10 @@ hr {
   z-index: 1080;
   background-size: 100%;
   background-position: center;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
   transform: scale(1); }
   #presenter.present {
     -webkit-transition: -webkit-transform 1.5s ease, background-color .8s ease;
@@ -355,6 +371,10 @@ hr {
     -o-transition: -o-transform 1.5s ease, background-color .8s ease;
     transition: transform 1.5s ease, background-color .8s ease;
     background-color: transparent;
+    -webkit-transform: scale(10);
+    -moz-transform: scale(10);
+    -ms-transform: scale(10);
+    -o-transform: scale(10);
     transform: scale(10); }
 
 body.project-page #project-content p {
@@ -1491,3 +1511,17 @@ body {
   background-color: white; }
   .modal-backdrop.in {
     opacity: 0.95; }
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, 25%);
+  -ms-transform: translate(0, 25%);
+  transform: translate(0, 25%);
+  -webkit-transition: -webkit-transform 2s cubic-bezier(0.04, 1.18, 0.42, 0.96);
+  -moz-transition: -moz-transform 2s cubic-bezier(0.04, 1.18, 0.42, 0.96);
+  -o-transition: -o-transform 2s cubic-bezier(0.04, 1.18, 0.42, 0.96);
+  transition: transform 2s cubic-bezier(0.04, 1.18, 0.42, 0.96); }
+
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  transform: translate(0, 0%); }

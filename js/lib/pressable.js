@@ -1,9 +1,15 @@
 window.updatePressables = function(){
-	$('.pressable').on('tap click', function(){
+	$('.pressable').on('tap click', function(event){
 		var link = $(this).find('a');
 
+		var ctrlpressed = event.metaKey;
+		
 		window.setTimeout(function(){
-			window.location.href = link.attr('href');
+			if(ctrlpressed){
+				window.open(link.attr('href'));
+			}else{
+				window.location.href = link.attr('href');
+			}
 		}, 700);
 	});
 
