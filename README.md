@@ -1,6 +1,8 @@
 # alessiosantocs.github.io
 Personal website and portfolio on github.
 
+![Screenshot](http://g.recordit.co/QsUQGWDX3N.gif)
+
 ### Architecture
 This is a weekend project so the architecture goes along with the fact that the timing was strict and some things may have been done in a hurry.
 
