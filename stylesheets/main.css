@@ -1,18 +1,18 @@
 @import url(lib/bootstrap.min.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
 .navbar.navbar-cinnamon {
+  z-index: 1090;
   background: white;
   border: none;
   border-radius: 0;
   min-height: 80px;
   margin-bottom: 0;
   letter-spacing: 0px; }
+  .navbar.navbar-cinnamon .navbar-header {
+    float: left; }
   .navbar.navbar-cinnamon .navbar-brand {
     height: 80px;
     padding: 20px 15px; }
-    @media (max-width: 465px) {
-      .navbar.navbar-cinnamon .navbar-brand {
-        width: 100%; } }
   .navbar.navbar-cinnamon .navbar-nav > li {
     text-align: center; }
     @media (min-width: 768px) {
@@ -301,7 +301,7 @@ hr {
   .hide-before-preload.enter, .show-after-preload.enter {
     opacity: 1; }
 
-.unselectable, .pressable, .project, .career-experience, .repository {
+.unselectable, .modal-closer, .modal-closer img, .pressable, .project, .career-experience, .repository {
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -1502,10 +1502,15 @@ body {
     .panel.display-overlay .panel-overlay .panel-message {
       -webkit-transform: translateY(0px); }
 
-.modal .modal-dialog .modal-content {
-  box-shadow: none;
-  border: none;
-  background-color: transparent; }
+.modal .modal-dialog {
+  margin: 120px 0px; }
+  @media (min-width: 768px) {
+    .modal .modal-dialog {
+      margin: 120px auto; } }
+  .modal .modal-dialog .modal-content {
+    box-shadow: none;
+    border: none;
+    background-color: transparent; }
 
 .modal-backdrop {
   background-color: white; }

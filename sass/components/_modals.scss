@@ -1,5 +1,10 @@
 .modal{
   .modal-dialog{
+    margin: 120px 0px;
+
+    @include media($breakpoint_sm){
+      margin: 120px auto;
+    }
 
     .modal-content{
       box-shadow: none;
@@ -31,3 +36,10 @@
   -ms-transform: translate(0,0%);
   transform: translate(0,0%);
 }
+
+
+// .modal-closer{
+//   position: fixed;
+//   top: 50px;
+//
+// }

@@ -191,6 +191,13 @@ hr{
 	}
 }
 
+.modal-closer{
+	@extend .unselectable;
+	img{
+		@extend .unselectable;
+	}
+}
+
 // Project page
 body.project-page{
 	// Contains markdown rendering

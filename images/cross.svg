@@ -5,11 +5,11 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="cross" sketch:type="MSArtboardGroup" stroke-linecap="square" stroke="#979797">
+        <g id="cross" sketch:type="MSArtboardGroup" stroke-linecap="square" stroke="#555555" stroke-width="2">
             <g id="Cross-buttom" sketch:type="MSLayerGroup">
                 <g id="Cross-Symbol" transform="translate(18.853553, 18.146447) rotate(-315.000000) translate(-18.853553, -18.146447) translate(6.353553, 5.146447)" sketch:type="MSShapeGroup">
-                    <path d="M12.5,1.30487805 L12.5,25.695122" id="Line"></path>
-                    <path d="M0.304878049,13.5 L24.695122,13.5" id="Line-Copy-3"></path>
+                    <path d="M12,1.30487805 L12,25.695122" id="Line"></path>
+                    <path d="M0.304878049,13 L24.695122,13" id="Line-Copy-3"></path>
                 </g>
             </g>
         </g>

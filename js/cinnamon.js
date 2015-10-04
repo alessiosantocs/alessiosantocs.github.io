@@ -2,7 +2,7 @@
 var config = {
   displayName: "Alessio",
   showRepositories: false,
-  knownFor: "problem solving, attention to details and javascript"
+  knownFor: "creativity, perfectionism and magic."
 };
 
 var api = {
@@ -168,6 +168,24 @@ $(document).ready(function(){
     // $('#thankyou-message').removeClass('hidden');
 
     return false;
+  });
+
+  // Modal closer
+  var updateModalClosers = function(){
+    $(".modal-closer").each(function(){
+      var img = $(this).find("img.hidden");
+      img.removeClass("hidden");
+      img.next().addClass("hidden");
+      img.prev().addClass("hidden");
+
+    });
+  };
+  $(".modal-opener").click(function(){
+    $("#contact").modal("show");
+    updateModalClosers();
+  })
+  $(".modal-closer").click(function(){
+    updateModalClosers();
   });
 
 

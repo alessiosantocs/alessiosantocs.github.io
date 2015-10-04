@@ -6,6 +6,7 @@ $navbar_default_letter_spacing: 0px;
 
 .navbar{
 	&.navbar-cinnamon{
+		z-index: 1090;
 
 		background: $navbar_background_color;
 		border: none;
@@ -14,13 +15,17 @@ $navbar_default_letter_spacing: 0px;
 		margin-bottom: 0;
 		letter-spacing: $navbar_default_letter_spacing;
 
+		.navbar-header{
+			float: left;
+		}
+
 		.navbar-brand{
 			height: 80px;
 			padding: 20px 15px;
 
 			// Toggle hack
 			@media (max-width: 465px){
-				width: 100%;
+				// width: 100%;
 				// text-align: center;
 
 				// &:after{
