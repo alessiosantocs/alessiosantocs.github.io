@@ -418,6 +418,10 @@ body.ready .modal-closer img {
   -o-transition: opacity 3s 1.5s ease;
   transition: opacity 3s 1.5s ease; }
 
+.kickass-text {
+  color: #ccc;
+  text-decoration: line-through; }
+
 body.project-page #project-content p {
   text-align: justify;
   font-size: 18px;
