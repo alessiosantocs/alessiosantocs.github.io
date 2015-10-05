@@ -141,10 +141,45 @@ $navbar_default_letter_spacing: 0px;
 	}
 
 	.logo{
+		position: relative;
 		font-size: 28px;
 		line-height: 35px;
 		letter-spacing: 1px;
 
 		color: $primary_color;
+
+		.logotype-about{
+			position: absolute;
+			background: white;
+			z-index: 10;
+			opacity: 0;
+
+			@include cB(transition, opacity .2s ease);
+		}
+
+		.logotype-displayname{
+			position: absolute;
+			left: 0;
+			opacity: 0;
+
+			-webkit-transition: opacity .3s .3s  ease, -webkit-transform .4s .3s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+			-moz-transition: opacity .3s .3s  ease, -moz-transform .4s .3s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+			-ms-transition: opacity .3s .3s  ease, -ms-transform .4s .3s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+			-o-transition: opacity .3s .3s  ease, -o-transform .4s .3s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+			transition: opacity .3s .3s  ease, transform .4s .3s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+		}
+	}
+}
+
+
+body.ready{
+	.navbar .logo{
+		.logotype-about{
+			opacity: 1;
+		}
+		.logotype-displayname{
+			opacity: 1;
+			@include cB(transform, translateX(76px));
+		}
 	}
 }

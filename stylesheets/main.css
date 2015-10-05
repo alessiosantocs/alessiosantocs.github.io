@@ -70,10 +70,40 @@
   .navbar.navbar-cinnamon .navbar-toggle .icon-bar {
     background-color: #e5c4a9; }
 .navbar .logo {
+  position: relative;
   font-size: 28px;
   line-height: 35px;
   letter-spacing: 1px;
   color: #4da14b; }
+  .navbar .logo .logotype-about {
+    position: absolute;
+    background: white;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    -moz-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
+    -o-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
+  .navbar .logo .logotype-displayname {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0.3s ease, -webkit-transform 0.4s 0.3s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+    -moz-transition: opacity 0.3s 0.3s ease, -moz-transform 0.4s 0.3s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+    -ms-transition: opacity 0.3s 0.3s ease, -ms-transform 0.4s 0.3s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+    -o-transition: opacity 0.3s 0.3s ease, -o-transform 0.4s 0.3s cubic-bezier(0.08, 1.18, 0.69, 1.01);
+    transition: opacity 0.3s 0.3s ease, transform 0.4s 0.3s cubic-bezier(0.08, 1.18, 0.69, 1.01); }
+
+body.ready .navbar .logo .logotype-about {
+  opacity: 1; }
+body.ready .navbar .logo .logotype-displayname {
+  opacity: 1;
+  -webkit-transform: translateX(76px);
+  -moz-transform: translateX(76px);
+  -ms-transform: translateX(76px);
+  -o-transform: translateX(76px);
+  transform: translateX(76px); }
 
 /*Body*/
 body {
@@ -377,6 +407,17 @@ hr {
     -o-transform: scale(10);
     transform: scale(10); }
 
+.modal-closer img {
+  opacity: 0; }
+
+body.ready .modal-closer img {
+  opacity: 1;
+  -webkit-transition: opacity 3s 1.5s ease;
+  -moz-transition: opacity 3s 1.5s ease;
+  -ms-transition: opacity 3s 1.5s ease;
+  -o-transition: opacity 3s 1.5s ease;
+  transition: opacity 3s 1.5s ease; }
+
 body.project-page #project-content p {
   text-align: justify;
   font-size: 18px;
@@ -408,6 +449,7 @@ body.project-page #project-content img {
   padding: 10px 0px 5px 0px;
   border: none;
   border-bottom: 2px solid #c9f3f9;
+  background: transparent;
   border-radius: 0px;
   border-width: 2px;
   border-color: #aaaaaa;

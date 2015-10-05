@@ -188,14 +188,18 @@ $(document).ready(function(){
     updateModalClosers();
   });
 
+  $("body").addClass("ready");
 
   // Home page effect
   window.setTimeout(function(){
     $("#presenter").addClass("present");
     $("#contenteffect").addClass("present");
 
+    $("body").addClass("animation-started");
+
     window.setTimeout(function(){
+      $("body").addClass("animation-ended");
       $("#presenter").remove();
     }, 1600);
-  }, 800);
+  }, 900);
 });

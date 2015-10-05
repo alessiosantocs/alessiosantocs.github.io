@@ -192,9 +192,20 @@ hr{
 }
 
 .modal-closer{
+	img{
+		opacity: 0;
+	}
+
 	@extend .unselectable;
 	img{
 		@extend .unselectable;
+	}
+}
+
+body.ready .modal-closer{
+	img{
+		opacity: 1;
+		@include cB(transition, opacity 3s 1.5s ease);
 	}
 }
 
