@@ -229,7 +229,71 @@ body.project-page{
 			width: 100%;
 		}
 	}
+
+	.page-placeholder{
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		left: 0;
+		background: white;
+		margin-top: 20px;
+		min-height: 100%;
+
+		opacity: 1;
+
+
+		.title-placeholder {
+			display: block;
+			height: 35px;
+			background: gray;
+			border-radius: 2px;
+			margin-right: 50%;
+
+			margin-bottom: 95px;
+
+			@include media($breakpoint_sm){
+				margin-bottom: 50px;
+			}
+		}
+
+		.img-placeholder {
+			display: block;
+			height: 320px;
+			background: whitesmoke;
+			margin-bottom: 30px;
+			border-radius: 2px;
+		}
+
+		.p-placeholder {
+		    display: block;
+		    height: 15px;
+		    background: whitesmoke;
+		    margin-bottom: 15px;
+
+				border-radius: 2px;
+
+				&:last-child{
+					margin-right: 40%;
+				}
+		}
+	}
+
+
+
+	&.content-loaded{
+		.page-placeholder{
+			@include cB(transition, opacity .2s .2s ease);
+			opacity: 0;
+		}
+	}
+	&.remove-all-effects{
+		.page-placeholder{
+			display: none;
+		}
+	}
 }
+
+
 
 // Extensions for specific classes
 .project,.career-experience,.repository{

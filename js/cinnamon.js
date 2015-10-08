@@ -108,6 +108,8 @@ $(document).ready(function(){
     if(match_array.length == 2){
       var id = match_array[1];
       api.projects(id, function(response){
+
+
         var project = response.project;
         $("title").html("Project: " + project.name + " - Alessio Santo - aboutalessio.com");
         $(".project-name").html(project.name);
@@ -116,6 +118,13 @@ $(document).ready(function(){
       });
 
       api.pages(id, function(r){
+
+        $("body").addClass("content-loaded");
+
+        window.setTimeout(function(){
+          $("body").addClass("remove-all-effects");
+        }, 500)
+
         $("#project-content").html(
           markdownit().render(r)
         );
