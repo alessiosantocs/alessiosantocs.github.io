@@ -13,6 +13,8 @@ $navbar_fixed_top: true;
 
 $test_red: rgb(217, 66, 51);
 
+$material_color: #2196F3;
+
 $green: 						#4DA14B;
 $dark_green: 				#A9B38C;
 
@@ -28,7 +30,7 @@ $strong_color: $black; // What color should be predominant in your website?
 $weak_color: $light_blue; // What color is also used as a weaker color?
 
 $base_color: $black; // Should be used for text
-$primary_color: $green; // Should be used for primary actions (cta buttons, primary links etc...)
+$primary_color: $material_color; // Should be used for primary actions (cta buttons, primary links etc...)
 $secondary_color: $weak_color; // Secondary actions will use this color.
 $success_color: $dark_green; // Success actions will use this color.
 

@@ -45,7 +45,7 @@ $link_sizes:	"xs" 12px,
 				// color: white;
 				text-decoration: none;
 
-				background-color: lighten($loop_link_color, 50%);
+				background-color: lighten($loop_link_color, 35%);
 			}
 
 			&:active, &.active{
@@ -84,7 +84,7 @@ $link_sizes:	"xs" 12px,
 	// }
 
 	&:not(.link-inline){
-		@include materialButtonEffectAdv(transparent, rgba(0,0,0, 0.1), .4s);
+		@include materialButtonEffectAdv(transparent, rgba(255,255,255, 0.3), .4s);
 	}
 
 	// Pokerface
@@ -150,7 +150,7 @@ button{
 	padding-top: 5px;
 	margin-top: -5px;
 
-	@include materialButtonEffectAdv(transparent, rgba(0,0,0, 0.1), .7s);
+	@include materialButtonEffectAdv(transparent, rgba(255,255,255, 0.3), .7s);
 	@extend .unselectable;
 
 	@include clearfix;
@@ -163,7 +163,7 @@ button{
 		&.pressable-#{$loop_pressable_name}{
 
 			&:hover, &.hover{
-				background-color: lighten($loop_pressable_color, 50%);
+				background-color: lighten($loop_pressable_color, 35%);
 			}
 
 		}
