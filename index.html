@@ -75,25 +75,24 @@
 		  </div><!-- /.container-fluid -->
 		</nav><!-- /.navbar -->
 
-<div id="contenteffect">
-		<div class="container">
+		<div class="container" style="position:static;">
 			<!-- Intro section -->
 			<!-- section-with-background-img smocky -->
-			<section class="section window-sized section-size-5" style="min-height: 480px;" data-size-percentage="1">
-					<div class="section-header vertically-aligned">
-						<h1 class="h2">
+			<section class="section window-sized section-size-5" style="min-height: 480px;" data-size-percentage="1.5">
+					<div id="contenteffect" class="section-header container no-padding" style="position: fixed; top: 30%;">
+						<h1 class="h2" id="prop">
 							<span id="proposition-displayname">Name here</span> is a<br class="visible-xs">
 							front-end developer<br class="visible-xs">
 							and UX designer
 						</h1>
 
-						<p class="lead hidden-xs">
+						<p class="lead hidden-xs" id="par">
 							He writes top quality front-end code for any device and codes remarkable experiences.
 						</p>
 
 						<br class="visible-xs">
 
-						<div class="row">
+						<div class="row" id="cta">
 							<div class="col-sm-4 col-xs-6">
 								<button class="btn btn-primary btn-outline btn-responsive modal-opener">
 									Let's talk
@@ -101,17 +100,16 @@
 							</div>
 							<div class="col-sm-5 no-padding-left col-xs-6">
 								<a href="http://github.com/alessiosantocs/alessiosantocs.github.io" class="link link-primary link-xs link-material" style="margin-top: 8px;">
-									Fork this website on github
+									Fork <span class="hidden-xs">this website</span> on github
 								</a>
 							</div>
 						</div>
 					</div>
 			</section><!-- / .section -->
 
-
 			<section class="section section-size-0 projects">
 				<div class="section-header">
-					<h4>projects/</h4>
+					<h4 class="slash">projects</h4>
 				</div>
 
 				<div class="project pressable">
@@ -145,7 +143,7 @@
 
 			<!-- <section class="section section-size-0">
 				<div class="section-header">
-					<h4>career-experience/</h4>
+					<h4 class="slash">career-experience</h4>
 				</div>
 
 				<div class="career-experience pressable">
@@ -178,7 +176,7 @@
 
 			<section class="section section-size-0 repositories">
 				<div class="section-header">
-					<h4>github-repositories/</h4>
+					<h4 class="slash">github-repositories</h4>
 				</div>
 
 				<div class="repository pressable">
@@ -212,8 +210,6 @@
 
 
 		</div><!-- / .container -->
-
-</div><!-- / #contenteffect -->
 
 	<div style="opacity:0;">Designed and developed by Alessio Santo</div>
 

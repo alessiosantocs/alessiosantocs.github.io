@@ -894,6 +894,11 @@ h1, .h1 {
   @media (min-width: 768px) {
     h1, .h1 {
       font-size: 40px; } }
+  h1.slash:after, .h1.slash:after {
+    content: "/";
+    color: #2196f3;
+    font-weight: 600;
+    margin-left: 5px; }
 
 h2, .h2 {
   font-family: "Roboto";
@@ -905,6 +910,11 @@ h2, .h2 {
   @media (min-width: 768px) {
     h2, .h2 {
       font-size: 34px; } }
+  h2.slash:after, .h2.slash:after {
+    content: "/";
+    color: #2196f3;
+    font-weight: 600;
+    margin-left: 5px; }
 
 h3, .h3 {
   font-family: "Roboto";
@@ -916,6 +926,11 @@ h3, .h3 {
   @media (min-width: 768px) {
     h3, .h3 {
       font-size: 28px; } }
+  h3.slash:after, .h3.slash:after {
+    content: "/";
+    color: #2196f3;
+    font-weight: 600;
+    margin-left: 5px; }
 
 h4, .h4 {
   font-family: "Roboto";
@@ -927,6 +942,11 @@ h4, .h4 {
   @media (min-width: 768px) {
     h4, .h4 {
       font-size: 22px; } }
+  h4.slash:after, .h4.slash:after {
+    content: "/";
+    color: #2196f3;
+    font-weight: 600;
+    margin-left: 5px; }
 
 h5, .h5 {
   font-family: "Roboto";
@@ -938,6 +958,11 @@ h5, .h5 {
   @media (min-width: 768px) {
     h5, .h5 {
       font-size: 16px; } }
+  h5.slash:after, .h5.slash:after {
+    content: "/";
+    color: #2196f3;
+    font-weight: 600;
+    margin-left: 5px; }
 
 h6, .h6 {
   font-family: "Roboto";
@@ -949,6 +974,11 @@ h6, .h6 {
   @media (min-width: 768px) {
     h6, .h6 {
       font-size: 10px; } }
+  h6.slash:after, .h6.slash:after {
+    content: "/";
+    color: #2196f3;
+    font-weight: 600;
+    margin-left: 5px; }
 
 /*Primary button*/
 .link {

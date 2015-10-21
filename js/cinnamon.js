@@ -209,6 +209,21 @@ $(document).ready(function(){
     window.setTimeout(function(){
       $("body").addClass("animation-ended");
       $("#presenter").remove();
+      $("#contenteffect").attr("id", "");
     }, 1600);
   }, 900);
+
+
+
+  // Special effects
+
+  $(window).scroll(function(event){
+    $("#prop").css("transform", "translateY(" + ( - window.scrollY * 0.14) + "px)");
+    $("#par").css("transform", "translateY(" + ( - window.scrollY * 0.12) + "px)");
+    $("#cta").css("transform", "translateY(" + ( - window.scrollY * 0.1) + "px)");
+
+    $("#prop").css("opacity", (1 - window.scrollY / (window.innerHeight/1.5)));
+    $("#par").css("opacity", (1 - window.scrollY / (window.innerHeight/2)));
+    $("#cta").css("opacity", (1 - window.scrollY / (window.innerHeight/3)));
+  });
 });

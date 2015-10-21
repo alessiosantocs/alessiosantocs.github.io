@@ -19,8 +19,19 @@ $headings_subtraction: 6px;
 		line-height: 1.5em;
 
 		// text-transform: uppercase;
+
+		&.slash{
+			&:after {
+		    content: "/";
+		    color: $primary_color;
+
+		    font-weight: 600;
+				margin-left: 5px;
+			}
+		}
 	}
 }
+
 
 .section-header{
 	@extend .margin-bottom-2;
