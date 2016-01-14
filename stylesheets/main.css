@@ -884,6 +884,9 @@ body.project-page.remove-all-effects .page-placeholder {
     .navbar-toggle.ci-hamburger .icon-bar + .icon-bar {
       margin-top: 8px; }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit; }
+
 h1, .h1 {
   font-family: "Roboto";
   font-weight: 400;
