@@ -1206,6 +1206,17 @@ p {
   p.light {
     color: #aaaaaa; }
 
+h2.subtitle {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    h2.subtitle {
+      font-size: 21px; } }
+
 body {
   letter-spacing: 0; }
 
