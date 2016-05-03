@@ -8,7 +8,9 @@
 
   creditContainerTag.id = "as-powercredits-container";
   creditLinkTag.id = "as-powercredits-a";
-  creditLinkTag.innerHTML = "Alessio Santo";
+  creditLinkTag.href = "http://aboutalessio.com";
+  creditLinkTag.target = "_blank";
+  creditLinkTag.innerHTML = "Powered by Alessio Santo";
   creditContainerTag.appendChild(creditLinkTag);
 
   var noscripttag = d.getElementById("as-powercredits-container");
