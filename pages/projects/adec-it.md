@@ -1,4 +1,4 @@
-![Adec.it](https://d1q7h0w9c0hiav.cloudfront.net/portfolios/images/000/003/791/featured/adec.png?1441877866)
+![Adec.it](https://raw.githubusercontent.com/alessiosantocs/alessiosantocs.github.io/master/images/adec-new.png)
 
 A redesign of a dental practice's existing wordpress website. ADEC dental practice is the top destination for dental care in Milan, Italy.
 
