@@ -15,5 +15,7 @@
 
   var noscripttag = d.getElementById("as-powercredits-container");
   noscripttag.remove();
+  
+  d.body.appendChild(stylesheet);
   d.body.appendChild(creditContainerTag);
 })(window, document)
