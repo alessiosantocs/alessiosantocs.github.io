@@ -11,7 +11,7 @@ div#as-powercredits-container:before {
   content: "";
   width: 15px;
   height: 15px;
-  display: block;
+  display: inline-block;
   background: #2196f3;
   border-radius: 50%;
 
@@ -23,11 +23,11 @@ div#as-powercredits-container:before {
 }
 
 div#as-powercredits-container:hover:before {
-  -webkit-transform: scale(1.1);
+  /*-webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1);*/
 }
 
 div#as-powercredits-container:hover a#as-powercredits-a{
@@ -39,7 +39,7 @@ a#as-powercredits-a{
   font-size: 12px;
   position: relative;
   top: -3px;
-  transition: transform .3s ease, opacity .2s ease;
+  transition: transform .3s ease, opacity .3s .1s ease;
   opacity: 0;
   transform: translateX(-100px);
   display: inline-block;
