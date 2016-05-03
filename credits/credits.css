@@ -40,8 +40,7 @@ div#as-powercredits-container:hover a#as-powercredits-a{
 
 a#as-powercredits-a{
   font-size: 12px;
-  position: relative;
-  top: -3px;
+  position: absolute;
   transition: transform .3s ease, opacity .3s .1s ease;
   opacity: 0;
   transform: translateX(-100px);
