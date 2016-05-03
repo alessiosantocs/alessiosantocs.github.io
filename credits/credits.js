@@ -11,7 +11,7 @@
   creditLinkTag.innerHTML = "Alessio Santo";
   creditContainerTag.appendChild(creditLinkTag);
 
-  var noscripttag = d.findElementById("as-powercredits-container");
+  var noscripttag = d.getElementById("as-powercredits-container");
   noscripttag.remove();
   d.body.appendChild(creditContainerTag);
 })(window, document)
