@@ -16,18 +16,27 @@
   var noscripttag = d.getElementById("as-powercredits-container");
   noscripttag.remove();
 
-  d.body.addEventListener("scroll", function(event){
+  var method;
+  if (w.addEventListener){
+    method = "addEventListener";
+  } else if (w.attachEvent){
+    method = "attachEvent";
+  }else{
+    return false;
+  }
+
+  w[method]("scroll", function(event){
     var scrollBottom = d.body.scrollTop + w.innerHeight; // 0 to maxScrollBottom
     var maxScrollBottom = d.body.scrollHeight;
 
-    var currentClass = creditContainerTag.className;
+    var currentClass = $0.className;
     if (scrollBottom >= maxScrollBottom - 250) {
       if(currentClass != "enter"){
-        creditContainerTag.className = "enter";
+        $0.className = "enter";
       }
     }else{
       if (currentClass == "enter") {
-        creditContainerTag.className = "";
+        $0.className = "";
       }
     }
   });
