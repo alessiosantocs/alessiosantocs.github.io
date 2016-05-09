@@ -29,14 +29,14 @@
     var scrollBottom = d.body.scrollTop + w.innerHeight; // 0 to maxScrollBottom
     var maxScrollBottom = d.body.scrollHeight;
 
-    var currentClass = $0.className;
+    var currentClass = creditContainerTag.className;
     if (scrollBottom >= maxScrollBottom - 250) {
       if(currentClass != "enter"){
-        $0.className = "enter";
+        creditContainerTag.className = "enter";
       }
     }else{
       if (currentClass == "enter") {
-        $0.className = "";
+        creditContainerTag.className = "";
       }
     }
   });
